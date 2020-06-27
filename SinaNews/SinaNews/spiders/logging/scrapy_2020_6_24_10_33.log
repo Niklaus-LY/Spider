@@ -1,0 +1,144 @@
+2020-06-24 10:33:34 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: SinaNews)
+2020-06-24 10:33:34 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.7 (default, Mar 23 2020, 23:19:08) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.18362-SP0
+2020-06-24 10:33:34 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'SinaNews',
+ 'CLOSESPIDER_ITEMCOUNT': 250,
+ 'CONCURRENT_REQUESTS': 32,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logging/scrapy_2020_6_24_10_33.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'SinaNews.spiders',
+ 'RETRY_TIMES': 5,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue',
+ 'SPIDER_MODULES': ['SinaNews.spiders']}
+2020-06-24 10:33:34 [scrapy.extensions.telnet] INFO: Telnet Password: c826f49f7ae2758f
+2020-06-24 10:33:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.closespider.CloseSpider',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-24 10:33:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-24 10:33:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-24 10:33:36 [scrapy.middleware] INFO: Enabled item pipelines:
+['SinaNews.pipelines.SinaNewsPipeline']
+2020-06-24 10:33:36 [scrapy.core.engine] INFO: Spider opened
+2020-06-24 10:33:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-24 10:33:36 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-06-24 10:33:37 [SinaSpider] INFO: 解析文章内容 + http://collection.sina.com.cn/yjjj/2020-06-24/doc-iircuyvk0173870.shtml
+2020-06-24 10:33:37 [SinaSpider] INFO: ['走进波洛克奥斯汀的故居 看个人空间与艺术创作']
+2020-06-24 10:33:38 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：http://collection.sina.com.cn/yjjj/2020-06-24/doc-iircuyvk0173870.shtml
+2020-06-24 10:33:38 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7025506535_1a2c0b8e700100s66c.html?from=sports&subch=fight
+2020-06-24 10:33:38 [SinaSpider] INFO: ['47岁“金童”霍亚计划重返拳坛，级别160磅中量级，他还能行吗？']
+2020-06-24 10:33:38 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7025506535_1a2c0b8e700100s66c.html?from=sports&subch=fight
+2020-06-24 10:33:38 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8695513.shtml
+2020-06-24 10:33:38 [SinaSpider] INFO: ['特朗普称民主党削减警务拨款会使他胜选']
+2020-06-24 10:33:38 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8695513.shtml
+2020-06-24 10:33:39 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8671854.shtml
+2020-06-24 10:33:39 [SinaSpider] INFO: ['微软设定公司多样化目标：将增加非裔美国人员工数量']
+2020-06-24 10:33:39 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8671854.shtml
+2020-06-24 10:33:39 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8688536.shtml
+2020-06-24 10:33:39 [SinaSpider] INFO: ['抗议再次闹到白宫门口 “黑宫自治区”是反讽还是“药方”？']
+2020-06-24 10:33:39 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8688536.shtml
+2020-06-24 10:33:40 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5137261048_1323461f801900s670.html?from=news&subch=onews
+2020-06-24 10:33:40 [SinaSpider] INFO: ['北京7+河北2！']
+2020-06-24 10:33:40 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5137261048_1323461f801900s670.html?from=news&subch=onews
+2020-06-24 10:33:42 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8668689.shtml
+2020-06-24 10:33:42 [SinaSpider] INFO: ['特朗普威胁对抗议者使用武力 推文再被Twitter打标签']
+2020-06-24 10:33:42 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8668689.shtml
+2020-06-24 10:33:42 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/wm/2020-06-24/doc-iircuyvk0142327.shtml
+2020-06-24 10:33:42 [SinaSpider] INFO: ['白宫门口出现“黑宫”，美国市内建“自治区”意味着什么？']
+2020-06-24 10:33:42 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/wm/2020-06-24/doc-iircuyvk0142327.shtml
+2020-06-24 10:33:43 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5137261048_1323461f801900s66z.html?from=news&subch=onews
+2020-06-24 10:33:43 [SinaSpider] INFO: ['驻加拿大使馆又公布了两个临时航班信息！']
+2020-06-24 10:33:43 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5137261048_1323461f801900s66z.html?from=news&subch=onews
+2020-06-24 10:33:44 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/stock/relnews/us/2020-06-24/doc-iircuyvk0142176.shtml
+2020-06-24 10:33:44 [SinaSpider] INFO: ['微软设定公司多样化目标：将增加非裔美国人员工数量']
+2020-06-24 10:33:44 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/stock/relnews/us/2020-06-24/doc-iircuyvk0142176.shtml
+2020-06-24 10:33:45 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001cxir.html?from=local
+2020-06-24 10:33:45 [SinaSpider] INFO: ['抗议再次闹到白宫门口“黑宫自治区”是反讽还是“药方”？']
+2020-06-24 10:33:45 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1655444627_62ac149302001cxir.html?from=local
+2020-06-24 10:33:45 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8662888.shtml
+2020-06-24 10:33:45 [SinaSpider] INFO: ['美国自然历史博物馆将移除前总统雕像']
+2020-06-24 10:33:45 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8662888.shtml
+2020-06-24 10:33:45 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/i/2020-06-24/doc-iirczymk8667301.shtml
+2020-06-24 10:33:45 [SinaSpider] INFO: ['微软设定公司多样化目标：将增加非裔美国人员工数量']
+2020-06-24 10:33:45 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/i/2020-06-24/doc-iirczymk8667301.shtml
+2020-06-24 10:33:45 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/stock/relnews/us/2020-06-24/doc-iirczymk8671064.shtml
+2020-06-24 10:33:46 [SinaSpider] INFO: ['特朗普威胁对抗议者使用武力 推文再被Twitter打标签']
+2020-06-24 10:33:46 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/stock/relnews/us/2020-06-24/doc-iirczymk8671064.shtml
+2020-06-24 10:33:47 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5182171545_134e1a99902000tpf2.html?from=news&subch=onews
+2020-06-24 10:33:47 [SinaSpider] INFO: ['特朗普称民主党削减警务拨款会使他胜选']
+2020-06-24 10:33:47 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5182171545_134e1a99902000tpf2.html?from=news&subch=onews
+2020-06-24 10:33:48 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/i/2020-06-24/doc-iirczymk8666596.shtml
+2020-06-24 10:33:48 [SinaSpider] INFO: ['特朗普威胁对抗议者使用武力 推文再被Twitter打标签']
+2020-06-24 10:33:48 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/i/2020-06-24/doc-iirczymk8666596.shtml
+2020-06-24 10:33:48 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8649179.shtml
+2020-06-24 10:33:48 [SinaSpider] INFO: ['印度大型相亲网站移除“肤色”选项，称该功能是设计上的误区']
+2020-06-24 10:33:48 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8649179.shtml
+2020-06-24 10:33:50 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1645705403_621778bb02000pkhw.html?from=news&subch=onews
+2020-06-24 10:33:50 [SinaSpider] INFO: ['北美观察丨抗议再次闹到白宫门口 “黑宫自治区”是反讽还是“药方”？']
+2020-06-24 10:33:50 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1645705403_621778bb02000pkhw.html?from=news&subch=onews
+2020-06-24 10:33:51 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-24/doc-iircuyvk0139047.shtml
+2020-06-24 10:33:51 [SinaSpider] INFO: ['《隐秘的角落》：我们为什么不愿承认孩子的恶？']
+2020-06-24 10:33:51 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-24/doc-iircuyvk0139047.shtml
+2020-06-24 10:33:52 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8667424.shtml
+2020-06-24 10:33:52 [SinaSpider] INFO: ['调查：更多美国人因种族、宗教或性问题遭遇网络骚扰']
+2020-06-24 10:33:52 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8667424.shtml
+2020-06-24 10:33:53 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6192937794_17120bb4202001ayjf.html?from=news&subch=onews
+2020-06-24 10:33:53 [SinaSpider] INFO: ['特朗普称民主党削减警务拨款会使他胜选']
+2020-06-24 10:33:53 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6192937794_17120bb4202001ayjf.html?from=news&subch=onews
+2020-06-24 10:33:55 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a02001419o.html?from=news&subch=onews
+2020-06-24 10:33:55 [SinaSpider] INFO: ['抗议再次闹到白宫门口 “黑宫自治区”是反讽还是“药方”？']
+2020-06-24 10:33:55 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1686546714_6486a91a02001419o.html?from=news&subch=onews
+2020-06-24 10:33:57 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1893892941_70e2834d02000s3vr.html?from=society
+2020-06-24 10:33:57 [SinaSpider] INFO: ['美国白宫外警察和示威者发生冲突和对峙']
+2020-06-24 10:33:57 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1893892941_70e2834d02000s3vr.html?from=society
+2020-06-24 10:33:58 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6538919633_185bffed100100uqj1.html?from=news
+2020-06-24 10:33:58 [SinaSpider] INFO: ['6月23日，美总统做了一个决定，或要让美国走上倒退之路']
+2020-06-24 10:33:58 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6538919633_185bffed100100uqj1.html?from=news
+2020-06-24 10:34:01 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7054224228_1a476eb6400100o0l7.html?from=news
+2020-06-24 10:34:01 [SinaSpider] INFO: ['竞选集会刚结束，美国多地就响起了枪声，特朗普的大麻烦还在后头']
+2020-06-24 10:34:01 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7054224228_1a476eb6400100o0l7.html?from=news
+2020-06-24 10:34:03 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6456450127_180d59c4f020012vgb.html?from=news&subch=onews
+2020-06-24 10:34:03 [SinaSpider] INFO: ['美国自然历史博物馆将移除前总统雕像']
+2020-06-24 10:34:03 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6456450127_180d59c4f020012vgb.html?from=news&subch=onews
+2020-06-24 10:34:05 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1914880192_7222c0c002000ugzn.html?from=mood
+2020-06-24 10:34:05 [SinaSpider] INFO: ['愿每个人心里都有“一亩田”']
+2020-06-24 10:34:05 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1914880192_7222c0c002000ugzn.html?from=mood
+2020-06-24 10:34:08 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5044281310_12ca99fde02001b882.html?from=cul
+2020-06-24 10:34:08 [SinaSpider] INFO: ['视界｜走进波洛克、奥斯汀的家，看个人空间与艺术创作']
+2020-06-24 10:34:08 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5044281310_12ca99fde02001b882.html?from=cul
+2020-06-24 10:34:10 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1887344341_707e96d502000wdoi.html?from=news&subch=onews
+2020-06-24 10:34:10 [SinaSpider] INFO: ['特雷·埃利斯：美国主流将再度“沉睡”']
+2020-06-24 10:34:10 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1887344341_707e96d502000wdoi.html?from=news&subch=onews
+2020-06-24 10:34:12 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1891273591_70ba8b7702000y752.html?from=news&subch=onews
+2020-06-24 10:34:12 [SinaSpider] INFO: ['白宫警察和示威者发生冲突']
+2020-06-24 10:34:12 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1891273591_70ba8b7702000y752.html?from=news&subch=onews
+2020-06-24 10:34:15 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5044281310_12ca99fde02001b88b.html?from=health
+2020-06-24 10:34:15 [SinaSpider] INFO: ['黑人弗洛伊德遭警方“跪杀”，这个动作实在太危险']
+2020-06-24 10:34:15 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5044281310_12ca99fde02001b88b.html?from=health
+2020-06-24 10:34:15 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-23/doc-iircuyvk0103317.shtml
+2020-06-24 10:34:15 [SinaSpider] INFO: ['人权理事会第44届会议将于6月30日至7月21日举行']
+2020-06-24 10:34:15 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-23/doc-iircuyvk0103317.shtml
+2020-06-24 10:34:18 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1644114654_61ff32de019010dpg.html?from=news&subch=onews
+2020-06-24 10:34:18 [SinaSpider] INFO: ['白宫门口出现“黑宫”，美国市内建“自治区”意味着什么？']
+2020-06-24 10:34:18 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1644114654_61ff32de019010dpg.html?from=news&subch=onews

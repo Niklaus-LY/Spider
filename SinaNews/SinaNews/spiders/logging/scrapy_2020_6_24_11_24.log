@@ -1,0 +1,1342 @@
+2020-06-24 11:24:34 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: SinaNews)
+2020-06-24 11:24:34 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.7 (default, Mar 23 2020, 23:19:08) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.18362-SP0
+2020-06-24 11:24:34 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'SinaNews',
+ 'CLOSESPIDER_ITEMCOUNT': 250,
+ 'CONCURRENT_REQUESTS': 32,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 2,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logging/scrapy_2020_6_24_11_24.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'SinaNews.spiders',
+ 'RETRY_TIMES': 5,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue',
+ 'SPIDER_MODULES': ['SinaNews.spiders']}
+2020-06-24 11:24:34 [scrapy.extensions.telnet] INFO: Telnet Password: b815e04e7492d10f
+2020-06-24 11:24:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.closespider.CloseSpider',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-24 11:24:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-24 11:24:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-24 11:24:36 [scrapy.middleware] INFO: Enabled item pipelines:
+['SinaNews.pipelines.SinaNewsPipeline']
+2020-06-24 11:24:36 [scrapy.core.engine] INFO: Spider opened
+2020-06-24 11:24:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-24 11:24:36 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-06-24 11:24:37 [SinaSpider] INFO: 解析文章内容 + http://global.sina.cn/szzx/article/20200624/06e0cf580c051000.html
+2020-06-24 11:24:37 [SinaSpider] INFO: []
+2020-06-24 11:24:38 [scrapy.core.scraper] ERROR: Error processing {'Text': ['来源 美国华人  第1770篇文章  编者按  '
+          '自从2014年以来，美国黑人男性因为警察暴力造成的非正常死亡事件开始受到广泛的关注，各处自发自动的抗议点燃了“黑人的命也是命”的运动。最近弗洛伊德死亡事件再度突出警察暴力的问题。这是少数坏苹果造成的偶发事件，还是反映出整个刑事司法体系存在系统性的问题？这个议题攸关美国前途，我们唯有冷静理性地探讨才能发掘真相。  '
+          '撰文：临风  '
+          '乔治·弗洛伊德被警察谋害的事件激发了全美国，甚至全世界的示威活动。最近几个不同的民调都指出，美国有三分之二以上的人支持“黑人的命也是命”（#BLM）运动；同时美国大多数人都认为，美国的刑事司法体系存在着系统性的问题。那么，事实到底如何呢？  '
+          '我们先看看最近发生的一个惨剧。  为什么我再也不会叫警察  詹姆斯·史密斯记者接受访问。（BBC截屏）  '
+          '2019年10月12日深夜两点多，德州沃思堡（Fort Worth）一个中产小区里，熟睡的詹姆斯·史密斯（James '
+          'Smith）被他的侄子和侄女摇醒，告诉他对面邻居家前门大开，灯火通明。史密斯是小区的老住户，他担心出了什么事，就从床上爬起来走过街。看到屋旁工具间是锁起来的，让他更加狐疑。  '
+          '对面住着的黑人老太太经常入住医院，他怀疑老人家身体又出了状况，就拨打电话簿中标明要求“健康检查”（wellness '
+          'check）的号码（非911），期望警察会来敲门，检查老太太的情况。他不知道老太太已经进了医院，女儿阿塔蒂亚娜·杰斐逊（Atatiana '
+          'Jefferson）和孙儿过来探望，他们两人当时正在打电脑游戏。  '
+          '几分钟后，警车到了，其中一位警察举着枪，没有敲门直接绕道后院，不久一声枪响！史密斯那时正好站在街对面，但他不知道发生了什么事。之后大批警察来到，但他问不出个所以然。六个小时以后，担架抬出一具尸体，就是老太太的女儿阿塔蒂亚娜。  '
+          '后来从警察随身佩戴的录像机的记录看出，警察走近屋后的窗户，对着屋内的阿塔蒂亚娜忽然大喊“举起手来，让我看到你的手！”话音未落，他从窗外向内射击。他根本没有宣布自己是警察。  '
+          '阿塔蒂亚娜用功读书希望进医学院。（BBC图片，Credit Amber Carr）  '
+          '阿塔蒂亚娜是位很上进的女青年。史密斯说：“她打算当医生的”。他沉默了一会儿，然后低声说：“但是现在不可能了。”  '
+          '史密斯说，他每天活在愧疚里，如果不是他那通电话，阿塔蒂亚娜今天还活着。她的死亡彻底摧毁了他对警察存余的任何信任。从今以后他再也不会打电话找警察了。。  '
+          '史密斯在院子里修剪，对面就是阿塔蒂亚娜被杀的浅蓝色房子。（BBC截图）  '
+          '今年3月13日，肯塔基州的路易维尔市，26岁的美国紧急医疗技术员布伦娜·泰勒（Breonna '
+          'Taylor）半夜里在毫无警告的情况下被破门而入的警察枪杀。  纪念布伦娜·泰勒女士。（PBS截屏）  '
+          '警察根本就走错了门，他们要抓的两个嫌犯距离她家有10英里之遥。泰勒的男友半夜里被惊醒，以为是坏人冲入，开枪自卫，警察还击时射杀了手无寸铁的泰勒女士。她只不过是“向毒品宣战”下，警察可以破门而入的又一位无辜的牺牲者罢了。  '
+          '警察枪击事件层出不穷，而且经常发生在无辜黑人的身上。这后面有没有什么系统性的因素呢？  如何定义系统性种族歧视？  '
+          '在这个族群关系高度紧张的时期，传统上对“种族主义”（racism）的定义已经不再合适。《韦氏字典》最近开始考虑重新修正“种族主义”的定义，这说明问题的复杂。  '
+          '让我们先给出一个可行的定义，以便本文讨论。“系统性种族歧视”就是在某个“系统性种族主义”（systemic '
+          'racism）的环境下出现经常性的种族区别待遇。那么什么是“系统性种族主义”呢？  '
+          '“系统性种族主义”一词往往被解释为：某个系统中绝大多数人都是种族主义者，本文对这个词的解读是：“某个机构或体制的运作造成经常性种族差异对待的现象，不论工作者本身的意图如何。”此外，当我们说：有“系统性种族歧视”存在时，也并不等于说：种族主义是唯一的因素。  '
+          '根据这个可行的界定，在排除了其它主要因素以后，那些经常不断发生的种族差别待遇的现象就可以归纳为系统性的种族歧视。比如，如果白人与黑人滥用药物的比例相同，社交习惯也相仿，但是，被逮捕的多是黑人，这就是系统性种族歧视。又比如，如果犯了同样的罪行，也有同样的犯罪史，但黑人的刑期经常比白人更长，这也是系统性的种族歧视。  '
+          '或许有人说，黑人是咎由自取，他们经常犯罪，以至于丧失了警察的信任，难怪警察对黑人“情有独钟”。持这样想法的人有可能不了解美国的社会生态，对贫穷黑人家庭所遭遇的困境没有近距离的接触，对人权的尊重也或许不够落实。  '
+          '对于一个从来不懂得什么是生活在绝望里的人，他有限的想象力往往才是真正的盲点。  '
+          '在一个自由民主的法治国家，执法人员与居民间是种“社会契约”的关系，执法人员拿工资为社区服务。警察不但是“执法者”，也是“服务者”，这是大前提。警民间的积极互动是维护社会治安重要的一环。如果居民对警察只有恐惧，却丧失信任，那么警察就不再有资格担当维护“法律与秩序”的“执法者”。  '
+          '首先，让我们来看看美国刑事司法体系的大环境。  美国大规模监禁的现象  '
+          '说到刑事司法体系，第一个进入我们视野的是美国监狱人满为患的现状。根据“量刑项目”（The Sentencing '
+          'Project）网站最新的资料，美国每10万人中有655个在监狱里服刑，美国坐牢人口的比率全世界第一！  “量刑项目”网站资料。  '
+          '根据“监狱政策倡议”（Prison Policy '
+          'Initiative）网站的资料，美国有230万人在坐牢，这也是世界第一。占全世界人口4.25%的美国，其监狱人口是全世界监狱人口的25%。更值得玩味的是，自从上个世纪90年代以来，美国犯罪率逐年持续下降，但是美国监狱人口仍然居高不下。  '
+          '美国监狱人口的分布图，包括联邦、州和地方监狱。（“监狱政策倡议”资料）  '
+          '监狱人口中有不少是在开庭前被关在监狱里的贫穷的少数族裔，没钱支付保释金“嫌疑犯”是无辜的，却要在监狱等好几年都可能无法上庭。  '
+          '超过55万人在开庭前就被关在监狱里，大部分是地方监狱。（“监狱政策倡议”资料）  '
+          '其实，美国大量监禁是一个相对新近的现象，是从尼克松上台推动“法律与秩序”运动期间开始的。  '
+          '自从废奴以后，美国监狱是唯一可以合法奴役人的地方。刑事司法体系用各样方法把人送进监狱，监狱里人越多廉价劳工就越多。美国许多公司的产品都是监狱廉价劳工的成品，私营监狱用各样方式剥削犯人，以增加盈利。这是极其不合理的。  '
+          '奥巴马总统是第一位在任内拜访美国监狱的总统，他曾经做过努力，希望改变现实，从图表看出，监狱人口在奥巴马任期内有所下降。他希望废止以赚钱为目的的监狱，但是没有成功，因为后面有强大的游说组织——“美国立法交流委员会”（American '
+          'Legislative Exchange Council，ALEC），和背后的整个政治生态系统。  '
+          '美国监狱人口的急速上升是1969年以后的现象。（“量刑项目”网站资料）  '
+          '另外，根据美国“司法统计局”（BJS）的数据，2013年黑人男性占男性监狱总人口的37%，白人男性占32%，拉美裔男性占22%。  '
+          '再根据“监狱政策倡议”的数据，美国黑人男性一生中曾经进监狱的概率是32%。拉美裔男性是17%。白人是6%，全国男性平均是11%。  '
+          '一个有犯罪或坐牢记录的人纵使出狱了，他这一生几乎肯定找不到好的工作，永不得翻身。他也可能永远失去投票权。换言之，他很有可能从此成为社会的弃儿！如果每三名黑人男性中有一个是坐过牢的，那就等于这三分之一的黑人男性的前途将是一片黑暗。他们所犯的罪很可能只是吸毒。这是个十分不公平的现实问题。  '
+          '各族群男人一生中进入监狱的概率。（“监狱政策倡议”资料）  '
+          '高喊自由民主的美国居然如此大规模监禁，的确令人诧异，它与自从尼克松上台后推动的“法律与秩序”运动密不可分。这背后与系统性的种族歧视关系密切，刑事司法系统提供源源不断的廉价劳力的犯人也是这个生态系统的一大奇观。  '
+          '系统性歧视的现象  2016年非裔导演阿娃。杜威內（Ava '
+          'DuVernay）执导的纪录片《第十三修正案》揭露，在宪法上解放黑奴以后，美国社会借用刑事司法体系实质上地奴役黑人的现象并没有停止。该影片对这个现象背后的种族因素和商业因素做了详尽的解说。  '
+          '美国的刑事司法体系，从逮捕、起诉、审前监禁、庭审、判决、量刑（包括死刑）、监禁到假释，整个流程都充满了对少数族裔系统性的歧视现象（2）。虽然刑事司法系统的执行绝大多数是地方性的，各州的法律也不尽相同，但是这些问题却是全国性的，说明它是个普遍的现象。  '
+          '因为问题十分错综复杂，非一篇文章可以说清，在此仅仅提出几个重点作说明。  种族刻板印象（Racial Profiling）  '
+          '在风卷全国的示威中，6月11日，美国国家医务总管，海军三星中将杰罗姆·亚当斯（Jerome '
+          'Adams）说，他敏锐地意识到自己有可能会遭遇到弗洛伊德同样的命运。他驾车时经常无缘无故地被警察拦截，并非因为他是医务总监，而因为他是黑人。  '
+          '美国医务总管，海军三星中将杰罗姆·亚当斯。（Business Insider新闻截屏）  '
+          '这让我想到南卡州联邦参议员，共和党的蒂姆·斯科特（Tim '
+          'Scott）的经历。2016年他在参议院发表重要谈话：在一年之内他曾经七次被华府的警察拦截、搜查，绝大多数都因为怀疑他的车是偷来的，他的许多黑人助手也有同样的经验。  '
+          '蒂姆·斯科特参议员。  '
+          '要知道，美国是个民主、自由的国家，宪法第四修正案禁止警察无理搜查和扣押，并规定，搜查和扣押状得有相当理由的支持。从法律上说，他们没有任何被警察拦截的理由。  '
+          '国家医药总监和联邦参议员的遭遇反映了全国各地黑人男性共同的遭遇。有个流行在警界的笑话说：“种族刻板印象这类事从来没发生过，但是它很有用”。  '
+          '2020年5月公布的一项针对2011年至2018年中56个警察机构的9500万次交通拦截的大规模研究发现，虽然黑人比白人更容易被拦下，但在夜间，当警察不能分辨驾驶人的种族时，拦截频率的差距就大幅缩小。  '
+          '该研究还发现，黑人在被拦截后更容易被搜查，虽然白人更容易被发现携带非法药物。  纽约市的“拦截与搜身”（Stop and '
+          'Frisk）可能是最有名的例子。高喊“法律与秩序”的人最喜欢用它“证明”：自从1994年实施“拦截与搜身”以后，纽约市的犯罪率明显下降。而且拦截后被逮捕的多半是少数民族（黑人、拉美），可见问题出在这些少数民族身上，必须对他们加强管束。  '
+          '事实是什么呢？事实是，这种说法是玩数字游戏！  '
+          '第一，自从1990年以来美国全国的犯罪率在逐年持续稳定下降，纽约的数字不过反映这个全国的趋势。而且在2014年取消“拦截与搜身”以后，犯罪率仍然持续下降。  '
+          '可见“拦截与搜身”的行动与减少犯罪毫无关系！甚至保守的《国家评论》杂志都在2018年1月1号的评论里承认自己误判：我们曾声称，“拦截与搜身”的大量减少将导致犯罪增加，可是，犯罪反而下降了。我们错了。  '
+          '全国暴力犯罪趋势，每十万人的犯罪率。  '
+          '第二，根据纽约市警察局的数据，从2002年到2011年，纽约市“拦截与搜身”的次数从97296次上升到超过五十万次（685724），其中88%无罪释放。被拦截的绝大多数（90%+）都是非裔和拉美裔青年。可见，纽约警察对这两类少数族裔“情有独钟”。有人认为，这90%的统计数字偏低，因为对那些没有“命中”的拦截，警察不一定会登记。  '
+          '警察执行任务时的种族差别待遇就是种系统性歧视行为的一种表现。  向毒品宣战  美国与毒品有关的犯人占监狱犯人的五分之一。  '
+          '各种统计数字一再显示，黑人被逮捕、指控和定罪为毒品犯罪，包括藏毒、贩毒和共谋的比率一直远远高于白人。尽管研究显示，这两个种族使用和贩卖毒品的比率大致相同。  '
+          '例如，截至2018年5月，纽约市的数据显示，黑人因大麻被捕的比率是白人的8倍，在曼哈顿是15倍。黑人社区的逮捕人数远远多于白人社区，尽管所有的数据显示，居民抱怨使用大麻的比率两者相当。  '
+          '根据国家“脱罪登记处”（NER）的数字，黑人因持有毒品而入狱的可能性是白人的5倍左右。根据免罪数据，黑人被错判毒品罪的可能性是白人的12倍！  '
+          '黑人在吸毒者中约占12.5%，但在因毒品犯罪被捕的人中占29%，在被监禁的人中占33%。  死刑的判决  '
+          '根据2012年特拉华州的一项研究，杀害白人的黑人被告获得死刑的可能性是杀害黑人的黑人被告的7倍。杀害白人的黑人被告被判处死刑的可能性是杀害白人的白人被告的3倍以上。  '
+          '当受害者是白人时，黑人更容易被误判为凶手。有31%被判为杀死白人的黑人被平反。更普遍的是，被误判谋杀罪的黑人比被误判谋杀罪的白人高50%。  '
+          '黑人无辜被误判为性侵犯的可能性是白人的3.5倍，被误判为毒品犯罪的可能性是白人的12倍。  '
+          '2016年的一项研究发现，在路易斯安那州，杀害白人的凶手被处决的可能性是杀害黑人的凶手的14倍。杀害白人妇女的黑人男子被判处死刑的可能性是杀害黑人男子的黑人男子的30倍。那些因杀害白人而被定罪的人也不太可能在上诉时被推翻判决，自1752年以来，路易斯安那州还没有因杀害黑人而处决过一个白人。  '
+          '检察官的认罪求情协议（plea bargain）  '
+          '在庭下解决法律争端的认罪求情协议可以加速法庭作业。问题出在：谁得到这种求情协议？交易的内容如何？许多不了解法律，没有社会资源的无辜黑人青年，由于检方恐吓施压接受求情协议，庭下认罪，只求早点结案出狱。  '
+          '2017年对威斯康星州约4.8万起刑事案件的研究显示，白人被告比黑人被告更有可能在求情协议中被检察官撤销最严重的指控。在面临可能被判处监禁的轻罪指控中，被告白人的指控被撤销、驳回或减少刑期的可能性比黑人高出75%。  '
+          '美国“司法援助局”（Bureau of Justice '
+          'Assistance）2011年发表的一份关于种族和认罪求情协议的研究发现，“关于种族和量刑结果的大多数研究表明，黑人比白人更不可能获得减刑”，“研究普遍发现种族与被告是否获得减刑之间存在密切关系”。  '
+          '2016年对弗吉尼亚州汉普顿路市内近47.4万起刑事案件的审查发现，毒品犯罪的白人更有可能获得求情协议而免于坐牢。在面临批发毒品的指控时，48%的白人因求情协议免于坐牢，而黑人的比例只有22%。在那些有犯罪前科、承认抢劫罪的人中，36%的白人没有坐牢，而黑人只有8%。  '
+          '法官和判刑  '
+          '哈佛大学2007年的一项研究发现，黑人之间的量刑差异，取决于他们肤色的深度。该研究调查了1995年至2002年佐治亚州的67000名初犯。白人男子的平均刑期为2689天。黑人男子的平均刑期多了378天。但浅肤色黑人的刑期仅比白人长三个半月。中等黑色皮肤的黑人被判处的刑期比白人长一年。漆黑皮肤的黑人被刑期比白人长一年半。另外一个2018年的学术研究得到同样的结论，越黑越倒霉。原来黑色是原罪！  '
+          '美国量刑委员会在2017年的一项数据调查发现，当黑人男子和白人男子犯下同样的罪行时，黑人男子的刑期平均要长20%。该研究排除了年龄和犯罪史等变量差异。  '
+          '2018年5月发表的一项研究发现，当一个白人和一个黑人被判犯有类似的罪行时，共和党任命的法官会判处黑人多三个月的监禁。  '
+          '关于刑期，最不合理的可能是克林顿总统时期推动的“三振出局”，如果你是第三次犯罪，那么法官就会给你课以重刑。一个第三次被抓到拥有毒品的人竟然可以判到终身监禁？克林顿总统后来为此道歉，承认自己做了一件大错事。  '
+          '监狱的另一个名称是“矫正所”，事实上，进到监狱的人耳濡目染往往只能使他变得更坏。“法律与秩序”的理念就是，把这批“坏人”长久关起来，让他们不再干扰社会。  '
+          '保释、审前拘留、减刑和赦免  '
+          '哥伦比亚大学司法实验室2020年3月的一项研究发现，黑人和拉美裔的假释犯“因违反假释规定而被关押在纽约州监狱的可能性明显高于白人”。研究发现，黑人和拉美裔因“技术性违规”假释而被重新监禁的可能性分别是白人的5倍和1.3倍。  '
+          '“监狱政策倡议组织”2019年对学术文献的审查发现，“在大城市地区，黑人重罪被告在审前羁押的可能性比等罪的白人被告高25%以上”。审查发现，在全国范围内，年轻的黑人男子在审前拘留的可能性比白人被告高出50%左右，保释金平均是白人的两倍。  '
+          '2018年对新奥尔良保释惯例的研究发现，黑人更有可能被要求支付保释金，并支付更高的保释金。他们经常没有能力支付保释金，因此，更有可能在审判前继续被监禁。  '
+          '2008年对“假释委员会”做决定的一项研究发现，“与白人罪犯相比，黑人罪犯在监狱中等待假释的时间更长”，在排除了法律、各种个人人口和社区特征的变数以后，种族和族裔差异仍然是假释决策的一个重要因素。  '
+          '从学校到监狱的直接通道  '
+          '美国的中小学，特别是贫困市区的学校，学生因为言语和行为不检被校方停学的比率很高，从短暂的到永久的都有。又因为防备枪击案，许多学校常驻配枪的警察，称作：学校资源官（school '
+          'resource '
+          'officer，SRO）。警察变成维护学校秩序的一员，这可能是美国唯一的特色。但就像执法部门的职业病，本应用于罕见事件的SRO往往被用于日常的事件，只是因为他们在场。（3）  '
+          'SRO的设置大量增加了学生被逮捕的人数。  这种情况在有SRO的学校发生得更多。“司法政策研究所”（Justice Policy '
+          'Institute）的一份报告发现，即使排除学区的贫困程度，有SRO的学校因 “行为不检 ”而被捕的人数是没有SRO的学校的5倍。  '
+          '配枪的SRO成为维持校内秩序的资源。（“司法政策研究所”网站截屏）  '
+          '美国有几项考察种族、行为和停学之间关系的研究，但没有一项获得“黑人学生行为不端的比例更高”的结论，可是黑人遭受停学处分的比率远超过白人。白人被停学的原因更多是因为犯了可证明，有记录的不良行为（吸烟、破坏他人财产和淫秽语言），而黑人被停学的原因多半是为了主观原因（不尊重权威）。  '
+          '根据美国教育部的统计，2011-2012学年约有9.2万名学生在学校被捕。而其中大部分都是轻微的违规行为。为了担心犯罪，美国很多学校实行“零容忍”的政策，于是学校把管训的任务推给了少年管教所。然而，被退学的学生中有40%是黑人，这批被退学的青少年日后有60%的概率进到监狱（4）。  '
+          '在少数族裔学生多的学区，很多学生来自破碎的家庭，他们生活在贫困线上，没有人重视他们的未来，学校对他们也没有任何期望。他们遇到的不是生活上和学业上的辅导，等待他们的是帮派、毒品、犯罪和警察。于是，从学校到监狱的直接通道就成为另一个美国特殊的社会景观。  '
+          '“有条件豁免”（qualified immunity）的联邦法律原则  '
+          '其他地方性的系统性问题还很多，例如，警察内部纠察评审的透明度、警察工会的嚣张、执法手段过分粗暴、警察职务涵盖太多而训练不足，等等。这类问题各地或有所差异，我们就不一一讨论了。  '
+          '几十年来发生了多少次警察暴力的事件，但是有几个警察被判刑的？这反映出一个全国性体制上的漏洞，使得法院很难给警察判罪。  '
+          '“有条件豁免”（qualified '
+          'immunity）是美国最高法院于1967年首次提出的一项“法律原则”。它最初的目的是：在法律规定不明确的情况下，保护执法人员在善意执法的案件中免受无意义的诉讼和经济责任。  '
+          '从2005年左右开始，法院越来越多地将该原则应用于涉及警察过度使用武力或致命武力的案件，导致了广泛的批评。用路透社2020年的一份报告的话说，该原则“已经成为一种近乎失效的工具，使警察的暴行不受惩罚，并剥夺了受害者的宪法权利”（5）。  '
+          '由于最高法院对“有条件豁免”的解读向警察倾斜，这意味着警察可以免于诉讼，除非他们的“确切行为”已经在以前的案件中被裁定为违法——这里的关键词是 '
+          '“确切”（即：除非有完全雷同的前例，否则免罪）。  '
+          '要解释一个案件与任何前例并不完全雷同，这是极其容易的事。警察既然几乎不可能被判刑，受害者或其家属寻求正义的唯一选择就是根据美国“宪法第四修正案”起诉警察侵犯公民权利。从公民权利（而非刑事责任）这条路径，受害家属如果胜诉，可以从地方政府取得金钱赔偿，目前这几乎是唯一的途径。  '
+          '根据脱口秀评论员约翰·奥利弗（John '
+          'Oliver）的资料（6），在过去5年内，美国10个最大城市的警察部门总共支付了10.2亿美元的庭外和解和法院判决罚款。这么高的赔款说明了警察执法有系统性的问题，只是因为碍于“有条件豁免”，走了民事诉讼的路子。以其用纳税人的钱替警察不当行为背书，而且不能解决问题，当务之急在于立法修正这个“法律原则”。  '
+          '风向的改变  6月9日公布的华盛顿邮报·沙尔学校（Washington Post-Schar '
+          'School）民调显示，弗洛伊德事件以后美国的民意第一次有了极大的改变。该民调根据6月2-7号的电话访问得到惊人的发现。接受访问的超过1000位成年人。（7）  '
+          '2014年发生几件大的警察暴力事件（Michael Brown，Eric Garner，Ezell '
+          'Ford，等等），使得全国轰动，但是，民调显示当时只有43%的人认为警察暴力反映了更大的问题。现在，美国有超过三分之二的人认为，警察暴力背后有更大的（系统性）因素，民意上升了超过20%。连共和党民众都有47%认同，上升了28%！这绝不是偶然。  '
+          '美国人不但说话了，而且意见相当一致，这不能不说是个惊喜，很可能这是个历史性的转折点。  '
+          '然而，民意不过是解决问题的一部分，最重要的还在于政客们如何出台解决方案。历史告诉我们，政客们经常选择的都是最小阻力的路径，因为任何改革都会动到某些利益集团的奶酪。因此，唯一的办法就是要选民们不断施压，特别在这个选举年，政客们的底线归根就底还是选票。  '
+          '1965年通过《投票权法案》是美国民权运动上个阶段的胜利，民权运动下个阶段的任务就是刑事司法体系的改革，减少系统性种族歧视的现象。我似乎再度听到约翰逊总统的声音：“We '
+          'shall overcome”（我们终将胜利！）。  注：  1。 Stephanie Hegarty， “Atatiana '
+          'Jefferson： ‘Why I will no longer call the police’，” 2020-6-16， '
+          'BBC2。 Radley Balko， “There’s overwhelming evidence that the '
+          'criminal justice system is racist。 Here’s the proof，” 2020-6-10， '
+          'WaPo3。 Libby Nelson & Dara Lind， “The school to prison pipeline， '
+          'explained，” 2015-2-24， Justice Policy Institute4。 Matthew Lynch， “5 '
+          'Facts Everyone Needs to Know About the School-to-Prison Pipeline，” '
+          '2015-8-28，https：//blogs.edweek.org/edweek/education_futures/2015/08/5_facts_everyone_needs_to_know_about_the_school-to-prison_pipeline.html5。 '
+          '“Six takeaways from Reuters investigation of police violence and '
+          '‘qualified immunity’，” 2020-5-8， Reuters（路透社）6。 Dino-Ray Ramos， '
+          '“‘Last Week Tonight’： John Oliver On How Policing Is Entangled With '
+          'White Supremacy， Reforming The System And Defunding The Police，” '
+          '2020-6-7， Deadline7。 Jacqueline Alemany， Brent D。 Griffiths， “Power '
+          'Up： There‘s been a dramatic shift in public opinion about police '
+          'treatment of black Americans，” 2020-6-9， WaPo  ✎作者简介  '
+          '临风，本名熊璩，出生于重庆，台湾长大。曾任台湾大学数学系副教授 ； 克雷超级电脑公司（Cray Research， '
+          'Inc。）研究部总工程师； '
+          '惠普公司中央实验室部门主管，大学关系部亚太区主任等。2011年退休，全力读书、研究、写作。在中国大陆出版有《绘画大师的心灵世界》（2012年江西人民出版社）。  '
+          '撰文：临风  编辑：Jing  本文由作者授权原创首发于《美国华人》公众号  '
+          '本文由作者投稿，内容不一定代表“美国华人”微信公众号立场。  美国华人  客观、理性、包容'],
+ 'Url': ['http://global.sina.cn/szzx/article/20200624/06e0cf580c051000.html']}
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\learning\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\Anaconda\envs\learning\lib\site-packages\scrapy\utils\defer.py", line 154, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "E:\PythonFile\SinaNews\SinaNews\pipelines.py", line 35, in process_item
+    title = item['Title'][0]
+  File "D:\Anaconda\envs\learning\lib\site-packages\scrapy\item.py", line 83, in __getitem__
+    return self._values[key]
+KeyError: 'Title'
+2020-06-24 11:24:38 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/stock/relnews/us/2020-06-24/doc-iircuyvk0194544.shtml
+2020-06-24 11:24:38 [SinaSpider] INFO: ['微软再投1.5亿美元 5年内使公司高管黑人数量翻番']
+2020-06-24 11:24:38 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/stock/relnews/us/2020-06-24/doc-iircuyvk0194544.shtml
+2020-06-24 11:24:38 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2730765330_a2c42c1202000t3kx.html?from=news&subch=onews
+2020-06-24 11:24:38 [SinaSpider] INFO: ['北美观察丨抗议再次闹到白宫门口 “黑宫自治区”是反讽还是“药方”？']
+2020-06-24 11:24:38 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/o/2020-06-24/doc-iirczymk8710012.shtml
+2020-06-24 11:24:38 [SinaSpider] INFO: ['现场直击：白宫附近加强戒备']
+2020-06-24 11:24:38 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/o/2020-06-24/doc-iirczymk8710012.shtml
+2020-06-24 11:24:38 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1784473157_6a5ce64502001wnmj.html?from=news&subch=onews
+2020-06-24 11:24:38 [SinaSpider] INFO: ['美国“人权”谎言是对新疆人权的极端漠视']
+2020-06-24 11:24:38 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1784473157_6a5ce64502001wnmj.html?from=news&subch=onews
+2020-06-24 11:24:38 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:24:40 [SinaSpider] INFO: 解析文章内容 + http://collection.sina.com.cn/yjjj/2020-06-24/doc-iircuyvk0173870.shtml
+2020-06-24 11:24:40 [SinaSpider] INFO: ['走进波洛克奥斯汀的故居 看个人空间与艺术创作']
+2020-06-24 11:24:40 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：http://collection.sina.com.cn/yjjj/2020-06-24/doc-iircuyvk0173870.shtml
+2020-06-24 11:24:40 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1644114654_61ff32de020010dwh.html?from=news&subch=onews
+2020-06-24 11:24:40 [SinaSpider] INFO: ['从西雅图自治区到黑宫自治区，特朗普何以怒不可遏']
+2020-06-24 11:24:41 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:24:42 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5328858693_13d9fee4502000vgov.html?from=news&subch=onews
+2020-06-24 11:24:42 [SinaSpider] INFO: ['因涉奴隶制含义，美国这个州要把州名砍掉一半']
+2020-06-24 11:24:42 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5328858693_13d9fee4502000vgov.html?from=news&subch=onews
+2020-06-24 11:24:42 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8695513.shtml
+2020-06-24 11:24:42 [SinaSpider] INFO: ['特朗普称民主党削减警务拨款会使他胜选']
+2020-06-24 11:24:42 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8695513.shtml
+2020-06-24 11:24:43 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:24:44 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2810373291_a782e4ab02001qjq4.html?from=news&subch=onews
+2020-06-24 11:24:44 [SinaSpider] INFO: ['现场直击：白宫附近加强戒备']
+2020-06-24 11:24:44 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2810373291_a782e4ab02001qjq4.html?from=news&subch=onews
+2020-06-24 11:24:46 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001cxum.html?from=local
+2020-06-24 11:24:46 [SinaSpider] INFO: ['现场直击：白宫附近加强戒备']
+2020-06-24 11:24:46 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1655444627_62ac149302001cxum.html?from=local
+2020-06-24 11:24:48 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_213815211_0cbe8fab02000y7dn.html?from=news&subch=onews
+2020-06-24 11:24:48 [SinaSpider] INFO: ['（国际）现场直击：白宫附近加强戒备']
+2020-06-24 11:24:48 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_213815211_0cbe8fab02000y7dn.html?from=news&subch=onews
+2020-06-24 11:24:50 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5782486271_158a9bcff00100oigr.html
+2020-06-24 11:24:50 [SinaSpider] INFO: ['美黑人女子遭白人男子大骂，称她买不起车，偷车卖毒品']
+2020-06-24 11:24:53 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6826701702_196e7338600100n62s.html
+2020-06-24 11:24:53 [SinaSpider] INFO: ['球员亲笔之托拜亚斯-哈里斯：我们的声音真的有人听进去了吗？']
+2020-06-24 11:24:55 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a020013z0m.html
+2020-06-24 11:24:55 [SinaSpider] INFO: ['美国非裔作家揭露司法不公：每一个黑人家庭都有一桩悬案']
+2020-06-24 11:24:58 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6208436959_1720d3adf00100oyr2.html
+2020-06-24 11:24:58 [SinaSpider] INFO: ['黑人牙膏要改名？反种族抗议浪潮之下，高露洁称重新评估品牌名称']
+2020-06-24 11:25:01 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6439974191_17fda352f00100s4ik.html
+2020-06-24 11:25:01 [SinaSpider] INFO: ['美国种族无法彻底消除，白人在该国的占多数，黑人强烈要求给赔偿']
+2020-06-24 11:25:03 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6444753008_18023207000100u6ny.html
+2020-06-24 11:25:04 [SinaSpider] INFO: ['美国 叛军 与黑人武装合作只是暂时的？“黑豹”对所有白人都仇视']
+2020-06-24 11:25:06 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5044281310_12ca99fde02001b7fr.html
+2020-06-24 11:25:06 [SinaSpider] INFO: ['对欧洲而言，美国黑人意味着什么？']
+2020-06-24 11:25:08 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6880228834_19a17f5e200100o1oy.html
+2020-06-24 11:25:08 [SinaSpider] INFO: ['美国恶战开始！1.6万民兵对黑人宣战！声称要清除全部黑人！']
+2020-06-24 11:25:10 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6427804009_17f20816900100o819.html
+2020-06-24 11:25:10 [SinaSpider] INFO: ['越闹越离谱！耶鲁大学被要求改名，是歧视还是黑人的玻璃心？']
+2020-06-24 11:25:10 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6427804009_17f20816900100o819.html
+2020-06-24 11:25:12 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6436095585_17f9f066100100modv.html
+2020-06-24 11:25:12 [SinaSpider] INFO: ['英国黑人女子从小在白人社区长大，长大后只愿与白人男性交往']
+2020-06-24 11:25:14 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6444735834_18022dd5a00100vc0g.html
+2020-06-24 11:25:14 [SinaSpider] INFO: ['特朗普最担心之事发生！白人和警察开始抗议示威，美国彻底失控']
+2020-06-24 11:25:17 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6888896730_19a9c38da00100r3wn.html
+2020-06-24 11:25:17 [SinaSpider] INFO: ['美国新墨西哥州白人动员了：10万民兵出现，配合警察剿灭黑人武装']
+2020-06-24 11:25:20 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6935207075_19d5edca300100rs1x.html
+2020-06-24 11:25:20 [SinaSpider] INFO: ['枪杀黑人警察面临死刑，大批警察上街游行抗议：让一切都烧起来吧']
+2020-06-24 11:25:23 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6839343950_197a81b4e00100psl7.html
+2020-06-24 11:25:23 [SinaSpider] INFO: ['五名黑人因谋杀白人入狱，美国警察呼吁将凶手全部绞死']
+2020-06-24 11:25:25 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6208436959_1720d3adf00100ozx9.html
+2020-06-24 11:25:25 [SinaSpider] INFO: ['500人在斯图加特打砸抢并袭击警察，德媒可能与美国黑人之死有关']
+2020-06-24 11:25:25 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/stock/usstock/c/2020-06-24/doc-iirczymk8665450.shtml
+2020-06-24 11:25:25 [SinaSpider] INFO: ['推特再次给特朗普推文加警告标签']
+2020-06-24 11:25:25 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/stock/usstock/c/2020-06-24/doc-iirczymk8665450.shtml
+2020-06-24 11:25:28 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6874605735_199c228a700100md27.html
+2020-06-24 11:25:28 [SinaSpider] INFO: ['英国种族歧视也不少，黑人亚裔罚款概率高7倍，警方：公开很尴尬']
+2020-06-24 11:25:30 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_3098510521_pb8af84b902700rgm3.html
+2020-06-24 11:25:30 [SinaSpider] INFO: []
+2020-06-24 11:25:30 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_3098510521_pb8af84b902700rgm3.html
+2020-06-24 11:25:30 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8688536.shtml
+2020-06-24 11:25:30 [SinaSpider] INFO: ['抗议再次闹到白宫门口 “黑宫自治区”是反讽还是“药方”？']
+2020-06-24 11:25:33 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2949462582_afcd3a36001010g22.html
+2020-06-24 11:25:33 [SinaSpider] INFO: ['美白有罪？强生下架美白产品！旗下新冠疫苗将于年底问世?']
+2020-06-24 11:25:33 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2949462582_afcd3a36001010g22.html
+2020-06-24 11:25:35 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6036064462_167c708ce00100tlyt.html
+2020-06-24 11:25:35 [SinaSpider] INFO: ['鸠占鹊巢？巴黎全面“沦陷”，黑人高喊驱逐白人，建立全黑人首都']
+2020-06-24 11:25:36 [scrapy.extensions.logstats] INFO: Crawled 39 pages (at 39 pages/min), scraped 19 items (at 19 items/min)
+2020-06-24 11:25:37 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6036064462_167c708ce00100tlyi.html
+2020-06-24 11:25:37 [SinaSpider] INFO: ['贪得无厌！美国黑人愈发“不要脸”，这是准备无法无天了？']
+2020-06-24 11:25:40 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001cxta.html?from=local
+2020-06-24 11:25:40 [SinaSpider] INFO: ['美国移除联邦纪念物风潮再起“白人至上的纪念碑不属于忠诚之地”']
+2020-06-24 11:25:40 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1655444627_62ac149302001cxta.html?from=local
+2020-06-24 11:25:41 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7025506535_1a2c0b8e700100s66c.html?from=sports&subch=fight
+2020-06-24 11:25:41 [SinaSpider] INFO: ['47岁“金童”霍亚计划重返拳坛，级别160磅中量级，他还能行吗？']
+2020-06-24 11:25:41 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7025506535_1a2c0b8e700100s66c.html?from=sports&subch=fight
+2020-06-24 11:25:41 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8671854.shtml
+2020-06-24 11:25:41 [SinaSpider] INFO: ['微软设定公司多样化目标：将增加非裔美国人员工数量']
+2020-06-24 11:25:41 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8671854.shtml
+2020-06-24 11:25:44 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5137261048_1323461f801900s670.html?from=news&subch=onews
+2020-06-24 11:25:44 [SinaSpider] INFO: ['北京7+河北2！']
+2020-06-24 11:25:44 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5137261048_1323461f801900s670.html?from=news&subch=onews
+2020-06-24 11:25:47 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5137261048_1323461f801900s66z.html?from=news&subch=onews
+2020-06-24 11:25:47 [SinaSpider] INFO: ['驻加拿大使馆又公布了两个临时航班信息！']
+2020-06-24 11:25:47 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:25:49 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001cxir.html?from=local
+2020-06-24 11:25:49 [SinaSpider] INFO: ['抗议再次闹到白宫门口“黑宫自治区”是反讽还是“药方”？']
+2020-06-24 11:25:49 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:25:51 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:25:51 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5182171545_134e1a99902000tpf2.html?from=news&subch=onews
+2020-06-24 11:25:51 [SinaSpider] INFO: ['特朗普称民主党削减警务拨款会使他胜选']
+2020-06-24 11:25:54 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:25:54 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1645705403_621778bb02000pkhw.html?from=news&subch=onews
+2020-06-24 11:25:54 [SinaSpider] INFO: ['北美观察丨抗议再次闹到白宫门口 “黑宫自治区”是反讽还是“药方”？']
+2020-06-24 11:25:56 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6192937794_17120bb4202001ayjf.html?from=news&subch=onews
+2020-06-24 11:25:56 [SinaSpider] INFO: ['特朗普称民主党削减警务拨款会使他胜选']
+2020-06-24 11:25:56 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:25:59 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2127460165_m7ece774503300sb97.html
+2020-06-24 11:25:59 [SinaSpider] INFO: ['大晚上睡不着觉 特朗普推特连发非洲裔施暴视频']
+2020-06-24 11:25:59 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2127460165_m7ece774503300sb97.html
+2020-06-24 11:25:59 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:02 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5637065453_m14ffecaed03300uz4a.html
+2020-06-24 11:26:02 [SinaSpider] INFO: ['白宫外总统雕像险遭抗议者推倒，特勤局令记者紧急离场']
+2020-06-24 11:26:02 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:05 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6430525326_17f4a078e00100nzd9.html
+2020-06-24 11:26:05 [SinaSpider] INFO: ['不想再躲到地堡了！特朗普罕见警告抗议者们：你们尽管来试一试']
+2020-06-24 11:26:05 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:08 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1893801487_m70e11e0f03300ydyh.html
+2020-06-24 11:26:08 [SinaSpider] INFO: ['华盛顿的抗议还在继续，白宫多次成为“战场”。当地时间周一……']
+2020-06-24 11:26:08 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1893801487_m70e11e0f03300ydyh.html
+2020-06-24 11:26:08 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:09 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6437909728_17fbab4e000100t0g0.html
+2020-06-24 11:26:09 [SinaSpider] INFO: ['特朗普竞选集会乱成一锅粥：抗议者干扰支持者过安检，总统很败兴']
+2020-06-24 11:26:10 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:11 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6962285118_19efc0a3e00100rqh3.html
+2020-06-24 11:26:11 [SinaSpider] INFO: ['特朗普当选就移民？奥巴马下狠心全家移居：加拿大比美国安全多了']
+2020-06-24 11:26:11 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6962285118_19efc0a3e00100rqh3.html
+2020-06-24 11:26:13 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:13 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6379388705_17c3dbf2100100jjw8.html
+2020-06-24 11:26:13 [SinaSpider] INFO: ['特朗普说漏嘴：华盛顿也是奴隶主！抗议者：也必须拆除他的雕像']
+2020-06-24 11:26:15 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6531737414_18552674600100tilv.html
+2020-06-24 11:26:15 [SinaSpider] INFO: ['西雅图自治区民众要和警方摊牌，组人链设路障阻止被接管']
+2020-06-24 11:26:15 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:18 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:18 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/wm/2020-06-24/doc-iircuyvk0142327.shtml
+2020-06-24 11:26:18 [SinaSpider] INFO: ['白宫门口出现“黑宫”，美国市内建“自治区”意味着什么？']
+2020-06-24 11:26:19 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2730765330_a2c42c1202000t3ab.html
+2020-06-24 11:26:19 [SinaSpider] INFO: ['万万没想到|“白宫回忆录”不只炸出特朗普猛料 还带台湾出场了几页！']
+2020-06-24 11:26:19 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8668689.shtml
+2020-06-24 11:26:19 [SinaSpider] INFO: ['特朗普威胁对抗议者使用武力 推文再被Twitter打标签']
+2020-06-24 11:26:19 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:21 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7020147773_1a26ef43d00100ugfh.html
+2020-06-24 11:26:21 [SinaSpider] INFO: ['特朗普军校演说语出惊人：美国不是世界警察！此言背后用意颇深']
+2020-06-24 11:26:22 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/stock/relnews/us/2020-06-24/doc-iircuyvk0142176.shtml
+2020-06-24 11:26:22 [SinaSpider] INFO: ['微软设定公司多样化目标：将增加非裔美国人员工数量']
+2020-06-24 11:26:22 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/stock/relnews/us/2020-06-24/doc-iircuyvk0142176.shtml
+2020-06-24 11:26:22 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/i/2020-06-24/doc-iirczymk8667301.shtml
+2020-06-24 11:26:22 [SinaSpider] INFO: ['微软设定公司多样化目标：将增加非裔美国人员工数量']
+2020-06-24 11:26:22 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/i/2020-06-24/doc-iirczymk8667301.shtml
+2020-06-24 11:26:22 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:24 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:24 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/stock/relnews/us/2020-06-24/doc-iirczymk8671064.shtml
+2020-06-24 11:26:24 [SinaSpider] INFO: ['特朗普威胁对抗议者使用武力 推文再被Twitter打标签']
+2020-06-24 11:26:25 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6145283913_v16e499749020013fcb.html
+2020-06-24 11:26:25 [SinaSpider] INFO: ['视频｜美国示威抗议活动导致各地雕像被大量推翻毁坏']
+2020-06-24 11:26:25 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/i/2020-06-24/doc-iirczymk8666596.shtml
+2020-06-24 11:26:25 [SinaSpider] INFO: ['特朗普威胁对抗议者使用武力 推文再被Twitter打标签']
+2020-06-24 11:26:25 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/i/2020-06-24/doc-iirczymk8666596.shtml
+2020-06-24 11:26:26 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6430525326_17f4a078e00100o136.html
+2020-06-24 11:26:26 [SinaSpider] INFO: ['特朗普为一句话，上电视辩解，结果越描越黑！还把自家官员坑了！']
+2020-06-24 11:26:27 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:27 [SinaSpider] INFO: 解析文章内容 + https://t.cj.sina.com.cn/articles/view/6219520342/172b6595602000nnbb
+2020-06-24 11:26:27 [SinaSpider] INFO: ['航司自救又有新招,东航3322元“随心飞”被抢购,有用户刷10套加价转卖']
+2020-06-24 11:26:29 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6409241151_m17e05423f03300p89y.html
+2020-06-24 11:26:29 [SinaSpider] INFO: ['白宫抗议现场：圣约翰大教堂前的一群抗议者向保卫白宫的警察高呼：“辞去你的工作”']
+2020-06-24 11:26:30 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:30 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-20/doc-iircuyvi9535448.shtml
+2020-06-24 11:26:30 [SinaSpider] INFO: ['加拿大领导人又说三道四，中方严正回击！']
+2020-06-24 11:26:30 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-20/doc-iircuyvi9535448.shtml
+2020-06-24 11:26:32 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6456450127_180d59c4f020012urz.html
+2020-06-24 11:26:32 [SinaSpider] INFO: ['美国白宫外警察和示威者发生冲突和对峙']
+2020-06-24 11:26:32 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6456450127_180d59c4f020012urz.html
+2020-06-24 11:26:32 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:32 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/7264577993/1b100a9c900100q61t
+2020-06-24 11:26:32 [SinaSpider] INFO: ['全球第二大吞吐量——首都机场近日进出港旅客量再创新低']
+2020-06-24 11:26:32 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/7264577993/1b100a9c900100q61t
+2020-06-24 11:26:33 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6617239163_18a6b0e7b00100quys.html
+2020-06-24 11:26:33 [SinaSpider] INFO: ['美国黑人抗议运动注定失败！自治区成了笑柄，还需要别人来接济']
+2020-06-24 11:26:35 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:36 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 57 pages/min), scraped 40 items (at 21 items/min)
+2020-06-24 11:26:36 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7366179346_1b70efa1200100pqyf.html
+2020-06-24 11:26:36 [SinaSpider] INFO: ['好戏开场了！博尔顿新书揭露美总统丑事，白宫这回遇到难题了']
+2020-06-24 11:26:37 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:37 [SinaSpider] INFO: 解析文章内容 + https://edu.sina.com.cn/a/2020-06-19/doc-iirczymk7654823.shtml
+2020-06-24 11:26:37 [SinaSpider] INFO: ['驻加拿大使馆开通在加中国留学人员心理支持热线']
+2020-06-24 11:26:37 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://edu.sina.com.cn/a/2020-06-19/doc-iirczymk7654823.shtml
+2020-06-24 11:26:37 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/5627698223/14f6fdc2f00100npom
+2020-06-24 11:26:37 [SinaSpider] INFO: ['[猛兽财经]被巴菲特抛弃的航空股怎么样了？']
+2020-06-24 11:26:37 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/5627698223/14f6fdc2f00100npom
+2020-06-24 11:26:39 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:39 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6019907326_166d07efe00100oxrt.html
+2020-06-24 11:26:39 [SinaSpider] INFO: ['特朗普已失去拥护？美军最高司令突然反目辞职，扬言后悔支持总统']
+2020-06-24 11:26:41 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:42 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6890884479_19aba8d7f00100pk96.html
+2020-06-24 11:26:42 [SinaSpider] INFO: ['嫌特朗普没有良心？又一名美国高官辞职：我必须听从良心的召唤']
+2020-06-24 11:26:42 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-19/doc-iirczymk7949017.shtml
+2020-06-24 11:26:42 [SinaSpider] INFO: ['特朗普许诺：美国第三季度GDP将是人类史上最高']
+2020-06-24 11:26:42 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-19/doc-iirczymk7949017.shtml
+2020-06-24 11:26:43 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:26:44 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a02001419o.html?from=news&subch=onews
+2020-06-24 11:26:44 [SinaSpider] INFO: ['抗议再次闹到白宫门口 “黑宫自治区”是反讽还是“药方”？']
+2020-06-24 11:26:47 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1893892941_70e2834d02000s3vr.html?from=society
+2020-06-24 11:26:47 [SinaSpider] INFO: ['美国白宫外警察和示威者发生冲突和对峙']
+2020-06-24 11:26:47 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1893892941_70e2834d02000s3vr.html?from=society
+2020-06-24 11:26:49 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6538919633_185bffed100100uqj1.html?from=news
+2020-06-24 11:26:49 [SinaSpider] INFO: ['6月23日，美总统做了一个决定，或要让美国走上倒退之路']
+2020-06-24 11:26:50 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7054224228_1a476eb6400100o0l7.html?from=news
+2020-06-24 11:26:50 [SinaSpider] INFO: ['竞选集会刚结束，美国多地就响起了枪声，特朗普的大麻烦还在后头']
+2020-06-24 11:26:50 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7054224228_1a476eb6400100o0l7.html?from=news
+2020-06-24 11:26:53 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6456450127_180d59c4f020012vgb.html?from=news&subch=onews
+2020-06-24 11:26:53 [SinaSpider] INFO: ['美国自然历史博物馆将移除前总统雕像']
+2020-06-24 11:26:55 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1914880192_7222c0c002000ugzn.html?from=mood
+2020-06-24 11:26:55 [SinaSpider] INFO: ['愿每个人心里都有“一亩田”']
+2020-06-24 11:26:55 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1914880192_7222c0c002000ugzn.html?from=mood
+2020-06-24 11:26:58 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5044281310_12ca99fde02001b882.html?from=cul
+2020-06-24 11:26:58 [SinaSpider] INFO: ['视界｜走进波洛克、奥斯汀的家，看个人空间与艺术创作']
+2020-06-24 11:26:58 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5044281310_12ca99fde02001b882.html?from=cul
+2020-06-24 11:27:00 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1887344341_707e96d502000wdoi.html?from=news&subch=onews
+2020-06-24 11:27:00 [SinaSpider] INFO: ['特雷·埃利斯：美国主流将再度“沉睡”']
+2020-06-24 11:27:01 [SinaSpider] INFO: 解析文章内容 + https://mil.news.sina.com.cn/2020-06-20/doc-iirczymk8111747.shtml
+2020-06-24 11:27:01 [SinaSpider] INFO: ['俄媒：美国政治体系将进入“锁死状态”']
+2020-06-24 11:27:01 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-22/doc-iircuyvi9889243.shtml
+2020-06-24 11:27:01 [SinaSpider] INFO: ['美国又发生警察勒死黑人的案例？真相让人无语！']
+2020-06-24 11:27:03 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1891273591_70ba8b7702000y752.html?from=news&subch=onews
+2020-06-24 11:27:03 [SinaSpider] INFO: ['白宫警察和示威者发生冲突']
+2020-06-24 11:27:06 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5044281310_12ca99fde02001b88b.html?from=health
+2020-06-24 11:27:06 [SinaSpider] INFO: ['黑人弗洛伊德遭警方“跪杀”，这个动作实在太危险']
+2020-06-24 11:27:06 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5044281310_12ca99fde02001b88b.html?from=health
+2020-06-24 11:27:06 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-21/doc-iirczymk8241149.shtml
+2020-06-24 11:27:06 [SinaSpider] INFO: ['美国第51个州？华盛顿特区争"州权" 特朗普:绝对不行']
+2020-06-24 11:27:09 [SinaSpider] INFO: 解析文章内容 + https://k.sina.cn/article_1887344341_v707e96d501900wcv4.html?from=news&subch=onews
+2020-06-24 11:27:09 [SinaSpider] INFO: ['\n             从没见过这样的特朗普\n          ']
+2020-06-24 11:27:09 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.cn/article_1887344341_v707e96d501900wcv4.html?from=news&subch=onews
+2020-06-24 11:27:10 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1644114654_61ff32de019010dpg.html?from=news&subch=onews
+2020-06-24 11:27:10 [SinaSpider] INFO: ['白宫门口出现“黑宫”，美国市内建“自治区”意味着什么？']
+2020-06-24 11:27:13 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5044281310_12ca99fde02001b88c.html?from=mood
+2020-06-24 11:27:13 [SinaSpider] INFO: ['“披荆斩棘的哥哥”，一场爹味PUA大赛？']
+2020-06-24 11:27:13 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:15 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:15 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-22/doc-iircuyvi9886050.shtml
+2020-06-24 11:27:15 [SinaSpider] INFO: ['特朗普的"塔尔萨归来"是怎么翻车的？']
+2020-06-24 11:27:15 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-22/doc-iircuyvi9886050.shtml
+2020-06-24 11:27:16 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1821797847_6c966dd701900nnyc.html
+2020-06-24 11:27:16 [SinaSpider] INFO: ['女子利用航班延误险牟利300万 关于航班延误险，你该知道什么？']
+2020-06-24 11:27:17 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1911611750_71f0e16600100po1y.html
+2020-06-24 11:27:17 [SinaSpider] INFO: ['美国放宽对中国航司限制！美国签证即将在中国境内全面开放预约？']
+2020-06-24 11:27:17 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1911611750_71f0e16600100po1y.html
+2020-06-24 11:27:18 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:18 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6074559670_16a126cb600100tkcp.html
+2020-06-24 11:27:18 [SinaSpider] INFO: ['6月23日加拿大两架包机起飞，无法回国的留学生该怎么办？']
+2020-06-24 11:27:20 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:21 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6909179607_19bd1b6d700100sj26.html
+2020-06-24 11:27:21 [SinaSpider] INFO: ['疫情期加国航空残忍拒客，阻拦女子赴美看绝症丈夫，如今道歉退钱']
+2020-06-24 11:27:22 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:23 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1698857957_654283e5019011lvi.html
+2020-06-24 11:27:23 [SinaSpider] INFO: ['气！航班被取消，“飞猪APP”还要收退款手续费！']
+2020-06-24 11:27:24 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:26 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6671129219_18da15a8300100prz6.html
+2020-06-24 11:27:26 [SinaSpider] INFO: ['500只斗牛犬被乌克兰航空公司暴力运输，打开货舱一看人们愤怒了']
+2020-06-24 11:27:26 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6671129219_18da15a8300100prz6.html
+2020-06-24 11:27:27 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:29 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:30 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1822027412_6c99ee9402700pcpw.html
+2020-06-24 11:27:30 [SinaSpider] INFO: ['部分航司近期进出北京航班可免费办理退票']
+2020-06-24 11:27:31 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:33 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001bcej.html
+2020-06-24 11:27:33 [SinaSpider] INFO: ['川航首个Wi-Fi航班启航！可供乘客免费使用']
+2020-06-24 11:27:33 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1655444627_62ac149302001bcej.html
+2020-06-24 11:27:34 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:35 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2011075080_77de920802000qsjb.html
+2020-06-24 11:27:35 [SinaSpider] INFO: ['2019年全国客运航班平均延误14分钟']
+2020-06-24 11:27:35 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2011075080_77de920802000qsjb.html
+2020-06-24 11:27:36 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:36 [scrapy.extensions.logstats] INFO: Crawled 142 pages (at 46 pages/min), scraped 58 items (at 18 items/min)
+2020-06-24 11:27:38 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5708210493_m1543c613d03301a8t5.html
+2020-06-24 11:27:38 [SinaSpider] INFO: ['冲突蔓延！加拿大蒙特利尔游行队伍与警方混战']
+2020-06-24 11:27:39 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:39 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1340723374_p4fe9d0ae02700mw8u.html
+2020-06-24 11:27:39 [SinaSpider] INFO: []
+2020-06-24 11:27:40 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1340723374_p4fe9d0ae02700mw8u.html
+2020-06-24 11:27:41 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:42 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5641375955_1504090d302000p5c1.html
+2020-06-24 11:27:42 [SinaSpider] INFO: ['500只法斗在加拿大机场被截获，38只死亡，脱水呕吐画面惨不忍睹']
+2020-06-24 11:27:42 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5641375955_1504090d302000p5c1.html
+2020-06-24 11:27:44 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:45 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1916653155_723dce6302000r60z.html
+2020-06-24 11:27:45 [SinaSpider] INFO: ['北美观察丨微笑里的种族歧视']
+2020-06-24 11:27:47 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:48 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1893892941_70e2834d02000rvm7.html
+2020-06-24 11:27:48 [SinaSpider] INFO: ['空调故障致飞机延误，乘客住宿租车受影响，航司赔不赔？']
+2020-06-24 11:27:48 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1893892941_70e2834d02000rvm7.html
+2020-06-24 11:27:48 [SinaSpider] INFO: 解析文章内容 + https://t.cj.sina.com.cn/articles/view/6739013226/191ad2e6a00100qoam
+2020-06-24 11:27:48 [SinaSpider] INFO: ['谷歌1600员工上书公司：要求断绝与警方合作，谷歌果断拒绝']
+2020-06-24 11:27:49 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:50 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001comt.html
+2020-06-24 11:27:50 [SinaSpider] INFO: ['首次竞选集会“史诗级”翻车现场，让特朗普看不懂的“美国后浪”']
+2020-06-24 11:27:52 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:27:53 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1664829361_633b47b100100oi3e.html
+2020-06-24 11:27:53 [SinaSpider] INFO: ['美国大选：拜登募款反超 筹备接掌白宫']
+2020-06-24 11:27:55 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6935212035_19d5ef00300100s3zh.html
+2020-06-24 11:27:55 [SinaSpider] INFO: ['博尔顿称不会投票给特朗普和拜登两人：民主党和特朗普一样差劲']
+2020-06-24 11:27:57 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1496814565_593793e502000snyl.html
+2020-06-24 11:27:57 [SinaSpider] INFO: ['国际观察｜拜登竞选搭档已缩小至6人，沃伦哈里斯等前竞争对手上名单']
+2020-06-24 11:27:59 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6444753008_18023207000100u5sa.html
+2020-06-24 11:27:59 [SinaSpider] INFO: ['谁能拿下美国总统宝座？面对扶不上墙的人拜登，白宫再次扳回一局']
+2020-06-24 11:28:02 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6019907326_m166d07efe03300oylx.html
+2020-06-24 11:28:02 [SinaSpider] INFO: ['谁将成功入住白宫，拜登支持率大增，特朗普发推反击：全都是假的']
+2020-06-24 11:28:02 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6019907326_m166d07efe03300oylx.html
+2020-06-24 11:28:04 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5782486271_158a9bcff00100ohiq.html
+2020-06-24 11:28:04 [SinaSpider] INFO: ['特朗普重回竞选集会，被赞：精力充沛，总统之位似乎属于他']
+2020-06-24 11:28:07 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a020013y5t.html
+2020-06-24 11:28:07 [SinaSpider] INFO: ['特朗普举行数月来首场竞选集会 参加人数远逊预期']
+2020-06-24 11:28:07 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1686546714_6486a91a020013y5t.html
+2020-06-24 11:28:08 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6811946409_196060da900100waaa.html
+2020-06-24 11:28:08 [SinaSpider] INFO: ['联邦法官泼冷水，特朗普阻止不了，博尔顿的书即将揭露什么？']
+2020-06-24 11:28:08 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6811946409_196060da900100waaa.html
+2020-06-24 11:28:11 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6533241521_185695ab100100ovwk.html
+2020-06-24 11:28:11 [SinaSpider] INFO: ['美黑人暴乱偃旗息鼓，升级政治运动，比打砸抢更危险，被拜登利用']
+2020-06-24 11:28:14 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6499982090_m1836ddb0a00100til6.html
+2020-06-24 11:28:14 [SinaSpider] INFO: ['好戏开场？拜登正式提名民主党总统候选人，特朗普大选对手出炉']
+2020-06-24 11:28:14 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6499982090_m1836ddb0a00100til6.html
+2020-06-24 11:28:16 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001cs4u.html
+2020-06-24 11:28:16 [SinaSpider] INFO: ['特朗普“气得冒烟”，伊万卡也十分气愤']
+2020-06-24 11:28:16 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1655444627_62ac149302001cs4u.html
+2020-06-24 11:28:18 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_3844617568_e528356002001qfxk.html
+2020-06-24 11:28:18 [SinaSpider] INFO: ['深度 | 特朗普终于登上他的“头号讲坛”，“秀”了点啥？']
+2020-06-24 11:28:20 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6074229260_16a0d620c00100u30z.html
+2020-06-24 11:28:20 [SinaSpider] INFO: ['特朗普2020年美国总统大选能否打败拜登取得总统连任？']
+2020-06-24 11:28:20 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6074229260_16a0d620c00100u30z.html
+2020-06-24 11:28:20 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/3914987272/me959f708001011pt1
+2020-06-24 11:28:20 [SinaSpider] INFO: ['强生停售露得清和可伶可俐的美白产品 黑人牙膏或将改名']
+2020-06-24 11:28:20 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/3914987272/me959f708001011pt1
+2020-06-24 11:28:22 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2032139271_791ffc0701900rxbf.html
+2020-06-24 11:28:22 [SinaSpider] INFO: ['为什么特朗普连任对中国是好事？']
+2020-06-24 11:28:22 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/world/gjcj/2020-06-23/doc-iirczymk8580447.shtml
+2020-06-24 11:28:23 [SinaSpider] INFO: ['谷歌1600多名员工请愿 要求公司停止向美国警方出售服务']
+2020-06-24 11:28:23 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/world/gjcj/2020-06-23/doc-iirczymk8580447.shtml
+2020-06-24 11:28:23 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/1961718870/74ed745601900sgyd
+2020-06-24 11:28:23 [SinaSpider] INFO: ['美国反种族歧视抗议活动牵扯高露洁！黑人牙膏：我的命，不是命？']
+2020-06-24 11:28:23 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/1961718870/74ed745601900sgyd
+2020-06-24 11:28:24 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a020013vff.html
+2020-06-24 11:28:24 [SinaSpider] INFO: ['特朗普为何未能废除“童年抵美者暂缓遣返计划”？']
+2020-06-24 11:28:24 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-15/doc-iircuyvi8544434.shtml
+2020-06-24 11:28:24 [SinaSpider] INFO: ['日本东京数千人示威活动：种族主义是一种流行病']
+2020-06-24 11:28:27 [SinaSpider] INFO: 解析文章内容 + https://k.sina.cn/article_1821797847_6c966dd701900novi.html?from=news&subch=onews
+2020-06-24 11:28:27 [SinaSpider] INFO: ['\n             旅客醉酒后拳砸舷窗致飞机备降 失恋不能“失智”\n          ']
+2020-06-24 11:28:27 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.cn/article_1821797847_6c966dd701900novi.html?from=news&subch=onews
+2020-06-24 11:28:28 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6373194400_17bdf3aa000100v0v1.html
+2020-06-24 11:28:28 [SinaSpider] INFO: ['塔图姆祝黑人爸爸父亲节快乐!白人母亲独自养大他,父亲另有1子1女']
+2020-06-24 11:28:28 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6373194400_17bdf3aa000100v0v1.html
+2020-06-24 11:28:31 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6562483877_187278ea500100r55i.html
+2020-06-24 11:28:31 [SinaSpider] INFO: ['千人持械斗殴，美国暴动中心激战了一夜：大批白人猛攻“起义军”']
+2020-06-24 11:28:31 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/6587623282/188a7277200100o43y
+2020-06-24 11:28:31 [SinaSpider] INFO: ['为什么到目前为止还没有建立一个强大的国家？有三个原因']
+2020-06-24 11:28:33 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7437110724_1bb494dc400100xa1f.html
+2020-06-24 11:28:33 [SinaSpider] INFO: ['垃圾遍地，满街尿骚，到处是黑人，这真的是浪漫之都巴黎吗']
+2020-06-24 11:28:34 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/2646232453/9dba4d8500100nu31
+2020-06-24 11:28:34 [SinaSpider] INFO: ['国外炒概念，也和A股一模一样！']
+2020-06-24 11:28:34 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/2646232453/9dba4d8500100nu31
+2020-06-24 11:28:36 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7182789486_1ac20ab6e00100pye1.html
+2020-06-24 11:28:36 [SinaSpider] INFO: ['美国抗议活动愈演愈烈的真正原因：疫情使贫富分化越来越严重']
+2020-06-24 11:28:36 [scrapy.extensions.logstats] INFO: Crawled 181 pages (at 39 pages/min), scraped 76 items (at 18 items/min)
+2020-06-24 11:28:39 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a0200140n2.html
+2020-06-24 11:28:39 [SinaSpider] INFO: ['耶鲁大学黑人学生当街被白人妇女辱骂，默默拍下视频']
+2020-06-24 11:28:39 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1686546714_6486a91a0200140n2.html
+2020-06-24 11:28:40 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6966497593_19f3c513900100qo3r.html
+2020-06-24 11:28:40 [SinaSpider] INFO: ['欧洲议会通过决议谴责美国警察粗暴执法，怎么看这件事情的意义']
+2020-06-24 11:28:43 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6938783540_19d956f34001018ryq.html
+2020-06-24 11:28:43 [SinaSpider] INFO: ['事态惊变！巴黎“沦陷”，大批黑人驱逐白人，高呼建立黑人首都']
+2020-06-24 11:28:44 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5641375955_1504090d302000p6p9.html
+2020-06-24 11:28:44 [SinaSpider] INFO: ['墨西哥黑帮在路边鞭打女子，女子苦苦哀嚎求饶，施暴者仍不为所动']
+2020-06-24 11:28:47 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6709192441_18fe626f900100qf93.html
+2020-06-24 11:28:47 [SinaSpider] INFO: ['凌晨3点，英超第一豪强5-0现场，飘过争议横幅：白人的命也是命']
+2020-06-24 11:28:47 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6709192441_18fe626f900100qf93.html
+2020-06-24 11:28:48 [SinaSpider] INFO: 解析文章内容 + https://t.cj.sina.com.cn/articles/view/6192937794/17120bb4202001awc3
+2020-06-24 11:28:48 [SinaSpider] INFO: ['“不支持黑人运动，就别合作”，广告公司是怎么反种族歧视的？']
+2020-06-24 11:28:48 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://t.cj.sina.com.cn/articles/view/6192937794/17120bb4202001awc3
+2020-06-24 11:28:49 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5540336897_14a3ad50100100tcrn.html
+2020-06-24 11:28:49 [SinaSpider] INFO: ['黑人地位最高的西方国家，国内黑人超800万，国家将彻底黑化']
+2020-06-24 11:28:49 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5540336897_14a3ad50100100tcrn.html
+2020-06-24 11:28:52 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6036064462_167c708ce00100tonw.html
+2020-06-24 11:28:52 [SinaSpider] INFO: ['在美华人终于团结起来！黑人不敢闯入，如今美国唯一的净土']
+2020-06-24 11:28:54 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2243807243_85bdc80b01900thvj.html
+2020-06-24 11:28:54 [SinaSpider] INFO: ['交75万美元保释金，他也出狱了']
+2020-06-24 11:28:56 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1562202700_5d1d524c01900oii8.html
+2020-06-24 11:28:56 [SinaSpider] INFO: ['黑人牙膏被迫改名，网友先炸了']
+2020-06-24 11:28:56 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1562202700_5d1d524c01900oii8.html
+2020-06-24 11:28:59 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7042752436_1a3c7dfb400100n4q4.html
+2020-06-24 11:28:59 [SinaSpider] INFO: ['暖心！仅27天 59岁珍妮被骂荡妇 詹皇用爱化解！球迷：库兹马呢？']
+2020-06-24 11:29:02 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6436393735_17fa3930700100nfiw.html
+2020-06-24 11:29:02 [SinaSpider] INFO: ['反击“枪声”打响！美为傲慢付出代价，联合国态度坚决，果断出手']
+2020-06-24 11:29:04 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7176828546_1abc5b68200100ol45.html
+2020-06-24 11:29:04 [SinaSpider] INFO: ['非裔超人气小天后自曝遭种族歧视经历，被要求漂白皮肤，增加人气']
+2020-06-24 11:29:07 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6315526016_m1786f478000100nzbm.html
+2020-06-24 11:29:07 [SinaSpider] INFO: ['轮到美国被索赔了？黑人求美国政府拿14万亿，来补偿5000万黑人']
+2020-06-24 11:29:07 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6315526016_m1786f478000100nzbm.html
+2020-06-24 11:29:10 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6671129219_18da15a8300100prbo.html
+2020-06-24 11:29:10 [SinaSpider] INFO: ['只因对黑人做出了一个锁喉动作，纽约一警察被无薪停职']
+2020-06-24 11:29:10 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6671129219_18da15a8300100prbo.html
+2020-06-24 11:29:12 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7365951623_1b70b808700100pjs7.html
+2020-06-24 11:29:12 [SinaSpider] INFO: ['第二个美国要出现了？巴西确诊超111万，却再现警察杀害黑人事件']
+2020-06-24 11:29:15 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2166917253_8128888502000wke1.html
+2020-06-24 11:29:15 [SinaSpider] INFO: ['只因做了锁喉动作,纽约一警察被无薪停职']
+2020-06-24 11:29:15 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2166917253_8128888502000wke1.html
+2020-06-24 11:29:17 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6315526016_m1786f478000100nwxo.html
+2020-06-24 11:29:17 [SinaSpider] INFO: ['比美国前总统还狠！肯塔基州州长推行政策：给黑人家庭搞免费医疗']
+2020-06-24 11:29:17 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6315526016_m1786f478000100nwxo.html
+2020-06-24 11:29:19 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6437685222_17fb747e600100olmi.html
+2020-06-24 11:29:19 [SinaSpider] INFO: ['美国白人警察再度火山浇油：直接枪杀黑人，大暴动和示威又开始了']
+2020-06-24 11:29:20 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5898468734_15f937d7e00101aifr.html
+2020-06-24 11:29:20 [SinaSpider] INFO: ['老照片 1967年美国底特律黑人大骚乱 汽车城从此一蹶不振']
+2020-06-24 11:29:22 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6935212035_19d5ef00300100s3zo.html
+2020-06-24 11:29:22 [SinaSpider] INFO: ['亲妈被警察抓走，墨西哥毒贩头目派人在13城放火，威胁炸毁政府']
+2020-06-24 11:29:22 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6935212035_19d5ef00300100s3zo.html
+2020-06-24 11:29:24 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7266877511_1b123c04700100p7k0.html
+2020-06-24 11:29:24 [SinaSpider] INFO: ['特朗普败局已定？美国下届总统基本“锁定”，最强劲敌获重大胜利']
+2020-06-24 11:29:27 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6036064462_167c708ce00100tomz.html
+2020-06-24 11:29:27 [SinaSpider] INFO: ['美国警察即将开始罢工：放弃纽约市，放入“叛军”和白人武装开战']
+2020-06-24 11:29:29 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7015821292_1a22cefec00100nu3c.html
+2020-06-24 11:29:29 [SinaSpider] INFO: ['闹到全世界去了！黑人受到厌烦？英国首相做出重要决定！']
+2020-06-24 11:29:32 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6386626065_17cac2e1100100qrrd.html
+2020-06-24 11:29:32 [SinaSpider] INFO: ['“把黑人送回非洲”——其实，19世纪初的美国真这么干了']
+2020-06-24 11:29:32 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/1733360754/6750fc7202000q4py
+2020-06-24 11:29:32 [SinaSpider] INFO: ['一周荐书 ｜ 美国种族主义思想的历史']
+2020-06-24 11:29:32 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/1733360754/6750fc7202000q4py
+2020-06-24 11:29:34 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1887344341_707e96d502000w8nk.html
+2020-06-24 11:29:34 [SinaSpider] INFO: ['“黑人救白”，火了']
+2020-06-24 11:29:36 [scrapy.extensions.logstats] INFO: Crawled 208 pages (at 27 pages/min), scraped 92 items (at 16 items/min)
+2020-06-24 11:29:36 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6935212035_19d5ef00300100ryve.html
+2020-06-24 11:29:36 [SinaSpider] INFO: ['美国记者发声：特朗普为种族动乱铺平了道路，他身边的人也一样']
+2020-06-24 11:29:38 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6902239104_19b67cf8000100s6r9.html
+2020-06-24 11:29:38 [SinaSpider] INFO: ['黑人越发猖狂，提出新要求“我们要当官”，不然就是种族歧视！']
+2020-06-24 11:29:43 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6533241521_185695ab100100ovex.html
+2020-06-24 11:29:43 [SinaSpider] INFO: ['黑人入境亚洲国家被检查：你这是在歧视吗？黑人真当“主人”了？']
+2020-06-24 11:29:46 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6427490401_17f1bb86100100qqon.html
+2020-06-24 11:29:46 [SinaSpider] INFO: ['鸠占鹊巢！法国黑人妄图赶走白人建首都，成为法国新主人']
+2020-06-24 11:29:49 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7268302999_1b139809702000r7l2.html
+2020-06-24 11:29:49 [SinaSpider] INFO: ['承认种族有差异：并非歧视黑人，这才是真正的科学']
+2020-06-24 11:29:52 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7423255691_1ba75e48b00100txfn.html
+2020-06-24 11:29:52 [SinaSpider] INFO: ['跪压美国黑人的警察出庭受审，为什么他既不认罪也不为自己辩护？']
+2020-06-24 11:29:54 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6875586274_199d11ee200100pfd2.html
+2020-06-24 11:29:54 [SinaSpider] INFO: ['美国抗议之火蔓延至英国，一黑人扛起受伤的白人就跑，跨越了肤色']
+2020-06-24 11:29:57 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6890884479_19aba8d7f00100pj5o.html
+2020-06-24 11:29:57 [SinaSpider] INFO: ['夺回西雅图！美国白人终于行动了：不能让黑人再继续祸害下去了！']
+2020-06-24 11:29:58 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6036064462_167c708ce00100tml1.html
+2020-06-24 11:29:58 [SinaSpider] INFO: ['同样是暴乱，为啥法国闹的更凶？法国人真的后悔了']
+2020-06-24 11:30:01 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7065398005_1a5216af500100qegx.html
+2020-06-24 11:30:01 [SinaSpider] INFO: ['网络疯传！美国商场白人喊了声"黑gui" 遭黑人暴揍！当场趴地求饶']
+2020-06-24 11:30:03 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6633502060_18b63356c00100s8h9.html
+2020-06-24 11:30:03 [SinaSpider] INFO: ['NBA老板搞歧视，奥运光环下有血泪，这个城市"黑"历史太多了']
+2020-06-24 11:30:03 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6633502060_18b63356c00100s8h9.html
+2020-06-24 11:30:03 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:30:05 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7318145759_1b4320adf00100py12.html
+2020-06-24 11:30:05 [SinaSpider] INFO: ['瓜帅为黑人发声被批伪君子，当年如此评价卡洛斯，他是种族主义者']
+2020-06-24 11:30:05 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7318145759_1b4320adf00100py12.html
+2020-06-24 11:30:05 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:30:05 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-21/doc-iirczymk8229988.shtml
+2020-06-24 11:30:05 [SinaSpider] INFO: ['推倒“国父”华盛顿雕像，美国示威者想表达什么？']
+2020-06-24 11:30:08 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-23/doc-iirczymk8545841.shtml
+2020-06-24 11:30:08 [SinaSpider] INFO: ['“清算历史”风潮席卷美国 白人要玩把大的了']
+2020-06-24 11:30:08 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6444784748_180239c6c00100slak.html
+2020-06-24 11:30:08 [SinaSpider] INFO: ['千人持械斗殴，美国暴动中心激战了一夜：大批白人猛攻“起义军”']
+2020-06-24 11:30:08 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/3205514555/bf10453b02000siyb
+2020-06-24 11:30:08 [SinaSpider] INFO: ['“我无法呼吸”的背后：美国警察之“困”']
+2020-06-24 11:30:09 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6444784748_180239c6c00100slam.html
+2020-06-24 11:30:09 [SinaSpider] INFO: ['白人民兵真不好惹！美国“起义军”刚落地就被抓 大妈都手持AK47']
+2020-06-24 11:30:10 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-23/doc-iirczymk8493264.shtml
+2020-06-24 11:30:10 [SinaSpider] INFO: ['怀特黑德：始终书写美国种族史，但现实让我精疲力尽']
+2020-06-24 11:30:11 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/3205514555/bf10453b02000sguh
+2020-06-24 11:30:11 [SinaSpider] INFO: ['特朗普在重压下签署警察改革令 专家认为种族歧视是美国的无解难题']
+2020-06-24 11:30:11 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6443864405_18015915500100mvt3.html
+2020-06-24 11:30:11 [SinaSpider] INFO: ['美国“起义军”和黑人武装再下一城：已成功拿下田纳西州国会大厦']
+2020-06-24 11:30:13 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/c/2020-06-18/doc-iircuyvi9165070.shtml
+2020-06-24 11:30:13 [SinaSpider] INFO: ['又一名黑人被枪杀 美国抗议再起']
+2020-06-24 11:30:13 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6036064462_167c708ce00100tkub.html
+2020-06-24 11:30:13 [SinaSpider] INFO: ['美国“起义军”迅速崛起的原因找到了：大批黑人高层秘密支持默许']
+2020-06-24 11:30:13 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/5925956184/16136ea5800100n9d3
+2020-06-24 11:30:13 [SinaSpider] INFO: ['黑人遭到厌烦，全世界各个白人发话了，他们的闹剧也该拉下帷幕了']
+2020-06-24 11:30:13 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/5925956184/16136ea5800100n9d3
+2020-06-24 11:30:15 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6562483877_187278ea500100r4kn.html
+2020-06-24 11:30:15 [SinaSpider] INFO: ['美国“叛军”组织发动人海战术：分别抢劫警察局，用卡车释放尾气']
+2020-06-24 11:30:16 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-24/doc-iircuyvk0139047.shtml
+2020-06-24 11:30:16 [SinaSpider] INFO: ['《隐秘的角落》：我们为什么不愿承认孩子的恶？']
+2020-06-24 11:30:16 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-24/doc-iircuyvk0139047.shtml
+2020-06-24 11:30:18 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6562483877_187278ea500100r38p.html
+2020-06-24 11:30:18 [SinaSpider] INFO: ['美国“叛军”势力进入军队：美空军中士在抗议期间，枪杀两名军官']
+2020-06-24 11:30:19 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-24/doc-iirczymk8667424.shtml
+2020-06-24 11:30:19 [SinaSpider] INFO: ['调查：更多美国人因种族、宗教或性问题遭遇网络骚扰']
+2020-06-24 11:30:21 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7019213300_1a260b1f400100w0m8.html
+2020-06-24 11:30:21 [SinaSpider] INFO: ['为何当好莱坞律师得知《黑豹》完全由白人制作，她就兴趣全无？']
+2020-06-24 11:30:23 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6430525326_17f4a078e00100o13c.html
+2020-06-24 11:30:23 [SinaSpider] INFO: ['美国“叛军”开启军事化：用古罗马阵对抗防暴警察，冷兵器战开始']
+2020-06-24 11:30:23 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6430525326_17f4a078e00100o13c.html
+2020-06-24 11:30:26 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6536271003_18597949b00100pfkc.html
+2020-06-24 11:30:26 [SinaSpider] INFO: ['特朗普惨遭否决：美国国土安全局拒绝认定，安提法是“叛军”武装']
+2020-06-24 11:30:29 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6532380425_1855c370900100prmq.html
+2020-06-24 11:30:29 [SinaSpider] INFO: ['特朗普主动授意，美国联邦调查局特工全面动员，大肆抓捕“叛军”']
+2020-06-24 11:30:29 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-24/doc-iirczymk8662888.shtml
+2020-06-24 11:30:29 [SinaSpider] INFO: ['美国自然历史博物馆将移除前总统雕像']
+2020-06-24 11:30:32 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6443864405_18015915500100mvsy.html
+2020-06-24 11:30:32 [SinaSpider] INFO: ['农村包围城市战略开始！美国“叛军”猛攻小城镇，开飞机去夏威夷']
+2020-06-24 11:30:32 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:30:33 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6608216679_189e1626700100u3yt.html
+2020-06-24 11:30:33 [SinaSpider] INFO: ['美军拒绝血腥镇压民众，特朗普警告被无视，西雅图被“叛军”攻占']
+2020-06-24 11:30:35 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6444753008_18023207000100u6o1.html
+2020-06-24 11:30:35 [SinaSpider] INFO: ['土耳其一夜突袭81个目标，除了轰炸库尔德，还把美国“叛军”炸了']
+2020-06-24 11:30:36 [scrapy.extensions.logstats] INFO: Crawled 247 pages (at 39 pages/min), scraped 122 items (at 30 items/min)
+2020-06-24 11:30:37 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5782486271_158a9bcff00100og0t.html
+2020-06-24 11:30:37 [SinaSpider] INFO: ['离开王室目的不简单！密友透露：不排除梅根从政的可能性']
+2020-06-24 11:30:40 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7423250578_1ba75d09200100osup.html
+2020-06-24 11:30:40 [SinaSpider] INFO: ['欧洲黑人女议员：欧洲不属于白人，更不属于白人男性']
+2020-06-24 11:30:40 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7423250578_1ba75d09200100osup.html
+2020-06-24 11:30:43 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1887344341_707e96d502000wbpa.html
+2020-06-24 11:30:43 [SinaSpider] INFO: ['亚辛·布布特：在欧洲，我们也无法呼吸']
+2020-06-24 11:30:45 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6888896730_19a9c38da00100r4lv.html
+2020-06-24 11:30:45 [SinaSpider] INFO: ['黑人暴乱副作用？很多国家禁止黑人入境，原因让人拍手称快！']
+2020-06-24 11:30:46 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6192937794_17120bb4202001au1q.html
+2020-06-24 11:30:46 [SinaSpider] INFO: ['涉嫌种族歧视，百事旗下的百年老牌要“退休”，黑人牙膏也可能改名']
+2020-06-24 11:30:46 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6192937794_17120bb4202001au1q.html
+2020-06-24 11:30:49 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6902751013_19b6f9f2500100q7b2.html
+2020-06-24 11:30:49 [SinaSpider] INFO: ['未雨绸缪！以色列强势遣返黑人，做法值得让各个国家效仿']
+2020-06-24 11:30:49 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:30:52 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6433810282_17f7c276a00100tb7z.html
+2020-06-24 11:30:52 [SinaSpider] INFO: ['为何说黑人骚乱闹得越凶，特朗普连任的概率就越高？']
+2020-06-24 11:30:55 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7018925246_1a25c4cbe00100o42q.html
+2020-06-24 11:30:55 [SinaSpider] INFO: ['西雅图成“法外之地”！“黑人自治州”成立，永生不受美国管控！']
+2020-06-24 11:30:58 [SinaSpider] INFO: 解析文章内容 + https://k.sina.cn/article_6935207075_19d5edca300100rnnc.html?from=news
+2020-06-24 11:30:58 [SinaSpider] INFO: ['\n             美国77岁警察押送有精神问题的黑人，被其一把夺过配枪射杀\n          ']
+2020-06-24 11:30:58 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.cn/article_6935207075_19d5edca300100rnnc.html?from=news
+2020-06-24 11:31:00 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6436351962_17fa2efda00100qcth.html
+2020-06-24 11:31:00 [SinaSpider] INFO: ['外媒曝美国“国会山自治区”新规：白人想留下，需要给黑人10美元']
+2020-06-24 11:31:03 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6438067147_17fbd1bcb00100o434.html
+2020-06-24 11:31:03 [SinaSpider] INFO: ['这已经不是暴乱了！美国黑人占领西雅图，出台了一条“霸王”条款']
+2020-06-24 11:31:05 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7423255691_1ba75e48b00100txfd.html
+2020-06-24 11:31:05 [SinaSpider] INFO: ['黑人在美国受到如此不公平待遇，为何不移民他国？']
+2020-06-24 11:31:08 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6902239104_19b67cf8000100s2mq.html
+2020-06-24 11:31:08 [SinaSpider] INFO: ['醉酒华人女孩被“捡尸”，黑人惯犯被“跪死”，白人就高人一等？']
+2020-06-24 11:31:10 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2584551281_9a0d1f7100100ny15.html
+2020-06-24 11:31:10 [SinaSpider] INFO: ['联合国看不下去了，要对美国动刀了！']
+2020-06-24 11:31:12 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7266187404_1b119388c00100msn9.html
+2020-06-24 11:31:12 [SinaSpider] INFO: ['刚刚!6月18日!悲痛惨剧仍在发生,法媒预言:美国将“步入苏联后尘"']
+2020-06-24 11:31:15 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7043745154_1a3d7058200100r7pv.html
+2020-06-24 11:31:15 [SinaSpider] INFO: ['西方国家黑人真会一直嚣张下去吗？白人的忍耐也许快到头了']
+2020-06-24 11:31:17 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7055850202_1a48fbada00100rog6.html
+2020-06-24 11:31:17 [SinaSpider] INFO: ['局势反转!美国白人高呼驱逐示威者,黑人的“天下共主梦”就此破碎']
+2020-06-24 11:31:19 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6903666637_19b7d97cd00100rg64.html
+2020-06-24 11:31:19 [SinaSpider] INFO: ['黑人遍布世界为何不去日本呢？网友：日本瓦力瓦力哇太难学了！']
+2020-06-24 11:31:19 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6903666637_19b7d97cd00100rg64.html
+2020-06-24 11:31:22 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7176702548_1abc3ca5400100rzz2.html
+2020-06-24 11:31:22 [SinaSpider] INFO: ['詹姆斯刚刚做出努力，美国又发生一起意外，黑人“布鲁克斯”离世']
+2020-06-24 11:31:25 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6444735834_18022dd5a00100vat9.html
+2020-06-24 11:31:25 [SinaSpider] INFO: ['美国人为什么支持特朗普？沉默的大多数，或是为了这3个原因！']
+2020-06-24 11:31:25 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/6580506682/1883a903a00100v9kl
+2020-06-24 11:31:25 [SinaSpider] INFO: ['27岁黑人男子当街被枪杀！美警惹怒群众，冲突过后留下2具尸体']
+2020-06-24 11:31:25 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/6580506682/1883a903a00100v9kl
+2020-06-24 11:31:27 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6967475925_19f4b3ed500100olwp.html
+2020-06-24 11:31:27 [SinaSpider] INFO: ['美作家称应该推倒耶稣雕像，发文控诉：这是白人至上一种形式']
+2020-06-24 11:31:30 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6935871768_19d69011800100rwr9.html?from=news
+2020-06-24 11:31:30 [SinaSpider] INFO: ['希拉里：特朗普当上总统我无法忍受']
+2020-06-24 11:31:32 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5137261048_1323461f802000s606.html?from=news&subch=onews
+2020-06-24 11:31:32 [SinaSpider] INFO: ['美籍华裔心理学家：美国处于重振与向衰转折点']
+2020-06-24 11:31:32 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5137261048_1323461f802000s606.html?from=news&subch=onews
+2020-06-24 11:31:35 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5044281310_12ca99fde02001b878.html?from=mood
+2020-06-24 11:31:35 [SinaSpider] INFO: ['《隐秘的角落》：我们为什么不愿承认孩子的恶？']
+2020-06-24 11:31:36 [scrapy.extensions.logstats] INFO: Crawled 273 pages (at 26 pages/min), scraped 141 items (at 19 items/min)
+2020-06-24 11:31:36 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6608531633_189e630b100100o85u.html?from=news
+2020-06-24 11:31:36 [SinaSpider] INFO: ['耶鲁大学危险了']
+2020-06-24 11:31:39 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1650414555_625f53db02001ainr.html?from=news&subch=onews
+2020-06-24 11:31:39 [SinaSpider] INFO: ['解放军报刊发系列报道丨美国疫情的背后③：人权与霸权']
+2020-06-24 11:31:41 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6336981385_179b6a98902000mvdx.html?from=mil
+2020-06-24 11:31:41 [SinaSpider] INFO: ['特朗普竞选集会上用单手喝水，证明身体健康，美国或面临老人政治']
+2020-06-24 11:31:41 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6336981385_179b6a98902000mvdx.html?from=mil
+2020-06-24 11:31:41 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-22/doc-iirczymk8416219.shtml
+2020-06-24 11:31:41 [SinaSpider] INFO: ['半年现3起恐袭案，约翰逊政府打算如何应对？']
+2020-06-24 11:31:41 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-22/doc-iirczymk8416219.shtml
+2020-06-24 11:31:44 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2810373291_a782e4ab02001qj7y.html?from=news&subch=onews
+2020-06-24 11:31:44 [SinaSpider] INFO: ['美国自然历史博物馆将移除前总统雕像']
+2020-06-24 11:31:46 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6562483877_187278ea500100r4up.html
+2020-06-24 11:31:46 [SinaSpider] INFO: ['美国“叛军”和黑人武装矛盾重重？道不同不相为谋，早晚互相翻脸']
+2020-06-24 11:31:46 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/roll/2020-06-23/doc-iirczymk8558134.shtml
+2020-06-24 11:31:46 [SinaSpider] INFO: ['美油强势！欧美制造业PMI搅局 黄金1760屡攻不破']
+2020-06-24 11:31:46 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/roll/2020-06-23/doc-iirczymk8558134.shtml
+2020-06-24 11:31:49 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7053153651_1a466957300100s00e.html
+2020-06-24 11:31:49 [SinaSpider] INFO: ['美国警察成了替罪羊？跪杀黑人警局被解散！纽约决定削减警方权力']
+2020-06-24 11:31:49 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/wm/2020-06-23/doc-iircuyvi9909302.shtml
+2020-06-24 11:31:49 [SinaSpider] INFO: ['英媒从北京发回报道：赶紧学习，英国这次别再慢了']
+2020-06-24 11:31:51 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6036064462_167c708ce00100tnkd.html
+2020-06-24 11:31:51 [SinaSpider] INFO: ['特朗普下令恢复死刑，美各州抗议人群恐慌，关键时刻奥巴马出手了']
+2020-06-24 11:31:52 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/2622472937/9c4fc2e902001ay40
+2020-06-24 11:31:52 [SinaSpider] INFO: ['中国暂停5国肉类进口！欧美肉制品厂疫情频发，对我国有何影响？']
+2020-06-24 11:31:52 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/2622472937/9c4fc2e902001ay40
+2020-06-24 11:31:54 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5675440730_152485a5a02000um9m.html
+2020-06-24 11:31:54 [SinaSpider] INFO: ['弗洛伊德弟弟：这次是我哥哥，下次可能就是我']
+2020-06-24 11:31:54 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/1686546714/6486a91a0200140n3
+2020-06-24 11:31:54 [SinaSpider] INFO: ['英央行行长：3月初新冠疫情来袭时，英国政府几乎破产']
+2020-06-24 11:31:54 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/1686546714/6486a91a0200140n3
+2020-06-24 11:31:57 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6430525326_17f4a078e00100nxjs.html
+2020-06-24 11:31:57 [SinaSpider] INFO: ['美国抗议活动变味！局势逐渐对拜登不利，把握不好将会适得其反']
+2020-06-24 11:31:59 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6536135341_1859582ad00100roso.html
+2020-06-24 11:31:59 [SinaSpider] INFO: ['日本3500人东京街头抗议，高举英日双语标牌，要求直面种族问题']
+2020-06-24 11:31:59 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-19/doc-iircuyvi9366879.shtml
+2020-06-24 11:31:59 [SinaSpider] INFO: ['因新书被特朗普骂傻瓜、病狗，博尔顿：不打算理他']
+2020-06-24 11:32:01 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6444498300_1801f3d7c00100o0x9.html
+2020-06-24 11:32:01 [SinaSpider] INFO: ['抗议者被打翻在地，保安拍下美警察暴力执法全过程，却遭射击警告']
+2020-06-24 11:32:02 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-20/doc-iircuyvi9562272.shtml
+2020-06-24 11:32:02 [SinaSpider] INFO: ['特朗普发"假视频"讽刺"假新闻" CNN记者找白宫算账']
+2020-06-24 11:32:03 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6935207075_19d5edca300100rp66.html
+2020-06-24 11:32:03 [SinaSpider] INFO: ['美国黑人因袭警坐牢5个月后，视频曝光其被警察殴打暴力执法在先']
+2020-06-24 11:32:04 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/7412874592/1b9d77d6000100tl0x
+2020-06-24 11:32:04 [SinaSpider] INFO: ['六成婴儿是黑人，法国正在“黑化”，为什么不控制黑人数量？']
+2020-06-24 11:32:04 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/7412874592/1b9d77d6000100tl0x
+2020-06-24 11:32:05 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6105713761_16bedcc6102000qdl3.html
+2020-06-24 11:32:05 [SinaSpider] INFO: ['黑奴解放155周年，掀起美国黑人运动新纪元？']
+2020-06-24 11:32:08 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6671129219_18da15a8300100pn8o.html
+2020-06-24 11:32:08 [SinaSpider] INFO: ['美国19岁女孩搭乘黑人男子的汽车遭侵犯，失踪一周后被发现死亡']
+2020-06-24 11:32:08 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6671129219_18da15a8300100pn8o.html
+2020-06-24 11:32:10 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5751833605_156d6040500100qatm.html
+2020-06-24 11:32:10 [SinaSpider] INFO: ['在被跪杀的黑人葬礼上，弗洛伊德的侄女质问：美国曾于何时伟大过']
+2020-06-24 11:32:11 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/1644648333/6207578d01900rizw
+2020-06-24 11:32:11 [SinaSpider] INFO: ['“黑人牙膏”不能叫了，真的要改名？']
+2020-06-24 11:32:11 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/1644648333/6207578d01900rizw
+2020-06-24 11:32:13 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6562483877_187278ea500100r0wn.html
+2020-06-24 11:32:13 [SinaSpider] INFO: ['美国黑人武装高声喊话：要将反白人压迫武装斗争继续进行下去！']
+2020-06-24 11:32:15 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6208436959_1720d3adf00100ovsj.html
+2020-06-24 11:32:15 [SinaSpider] INFO: ['美国黑人在警察执法过程中遭受不公平待遇几乎成为一个不争的事实']
+2020-06-24 11:32:15 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-09/doc-iircuyvi7541606.shtml
+2020-06-24 11:32:15 [SinaSpider] INFO: ['尴尬，美国司法部长一不小心说漏嘴了……']
+2020-06-24 11:32:15 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-09/doc-iircuyvi7541606.shtml
+2020-06-24 11:32:17 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6433810282_17f7c276a00100t8wh.html
+2020-06-24 11:32:17 [SinaSpider] INFO: ['美国黑人出生率多少年后黑人超过白人，美国能变成第二个南非吗']
+2020-06-24 11:32:19 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a020013ugc.html
+2020-06-24 11:32:19 [SinaSpider] INFO: ['只因说了句话？澳大利亚白人女孩被8名黑人围殴至骨折']
+2020-06-24 11:32:21 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6960896464_19ee6d9d0001015s32.html
+2020-06-24 11:32:21 [SinaSpider] INFO: ['跪杀弗洛伊德警察被“保释”民众募捐75万美元保释金！']
+2020-06-24 11:32:21 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-06/doc-iircuyvi7072879.shtml
+2020-06-24 11:32:21 [SinaSpider] INFO: ['能抵御核弹的“白宫地堡”曝光！主要功能“防团灭”']
+2020-06-24 11:32:21 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-06/doc-iircuyvi7072879.shtml
+2020-06-24 11:32:23 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6373194400_17bdf3aa000100uuhh.html
+2020-06-24 11:32:23 [SinaSpider] INFO: ['詹皇转发1920年5000白人暴徒吊死3黑人照片:理解历史才能理解痛苦']
+2020-06-24 11:32:24 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-20/doc-iirczymk8065898.shtml
+2020-06-24 11:32:24 [SinaSpider] INFO: ['美国华盛顿雕像也被推倒，示威者点燃国旗盖在雕像上']
+2020-06-24 11:32:24 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-02/doc-iirczymk4837216.shtml
+2020-06-24 11:32:24 [SinaSpider] INFO: ['总统要走过去拍照，催泪弹“开路”先！']
+2020-06-24 11:32:26 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6435003532_17f8e5c8c00100wh5l.html
+2020-06-24 11:32:26 [SinaSpider] INFO: ['疯狂一夜！游行升级为暴乱，芝加哥打砸抢烧，美国到底怎么回事？']
+2020-06-24 11:32:26 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-05/doc-iirczymk5386918.shtml
+2020-06-24 11:32:26 [SinaSpider] INFO: ['用催泪瓦斯“开路”？特朗普:没有,特勤局:没有,美媒:我有证据！']
+2020-06-24 11:32:26 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-05/doc-iirczymk5386918.shtml
+2020-06-24 11:32:27 [SinaSpider] INFO: 解析文章内容 + https://mil.news.sina.com.cn/2020-06-14/doc-iircuyvi8379573.shtml
+2020-06-24 11:32:27 [SinaSpider] INFO: ['改口！美特勤局承认用辣椒喷雾驱散白宫附近集会']
+2020-06-24 11:32:27 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://mil.news.sina.com.cn/2020-06-14/doc-iircuyvi8379573.shtml
+2020-06-24 11:32:28 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6716299795_190529a1300100ydvc.html
+2020-06-24 11:32:28 [SinaSpider] INFO: ['德国斯图加特扫毒引爆骚乱 数百人攻击警察砸商店']
+2020-06-24 11:32:28 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6716299795_190529a1300100ydvc.html
+2020-06-24 11:32:31 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001cljq.html
+2020-06-24 11:32:31 [SinaSpider] INFO: ['德国城市深夜爆发骚乱：因警察查缉毒品，数百人砸警车、打砸商铺……']
+2020-06-24 11:32:31 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1655444627_62ac149302001cljq.html
+2020-06-24 11:32:31 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:32:33 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2245075615_85d1229f01900pdul.html
+2020-06-24 11:32:33 [SinaSpider] INFO: ['“黑人牙膏”要改名？高露洁将重新评估品牌名称']
+2020-06-24 11:32:34 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:32:35 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6439981673_17fda526900100osl1.html
+2020-06-24 11:32:35 [SinaSpider] INFO: ['抗议遭质疑:要的不是正义而是暴乱，或有更多国家禁止黑人入境！']
+2020-06-24 11:32:36 [scrapy.extensions.logstats] INFO: Crawled 316 pages (at 43 pages/min), scraped 168 items (at 27 items/min)
+2020-06-24 11:32:36 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:32:38 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:32:38 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6434950669_17f8d8e0d00100ltt6.html
+2020-06-24 11:32:38 [SinaSpider] INFO: ['骚乱持续20多天后，特朗普罕见退让，要向“正义”迈出巨大一步']
+2020-06-24 11:32:40 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:32:41 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6166805925_16f91fda502000zot8.html
+2020-06-24 11:32:41 [SinaSpider] INFO: ['昨天最严重骚乱，在德国！']
+2020-06-24 11:32:41 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6166805925_16f91fda502000zot8.html
+2020-06-24 11:32:43 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:32:44 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5751833605_156d6040500100qap6.html
+2020-06-24 11:32:44 [SinaSpider] INFO: ['美国暴乱，那些把中国所有资产都转移到了美国的富豪后悔了吗？']
+2020-06-24 11:32:45 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6890881896_19aba8368001011kd6.html
+2020-06-24 11:32:45 [SinaSpider] INFO: ['美国人实在太聪明，想出这个办法，既能平息暴乱，也能拯救特朗普']
+2020-06-24 11:32:47 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6617239163_18a6b0e7b00100quyn.html
+2020-06-24 11:32:47 [SinaSpider] INFO: ['弗洛伊德事件后，警察形象被毁，黑人男孩见到警车反应令人心酸！']
+2020-06-24 11:32:50 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6379388705_17c3dbf2100100jhsv.html
+2020-06-24 11:32:50 [SinaSpider] INFO: ['黑人之死事件还没结束！美国国内又发生大事，佩洛西也站出来搞事']
+2020-06-24 11:32:52 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_3881380517_e7592aa502000wm3f.html
+2020-06-24 11:32:52 [SinaSpider] INFO: ['英国警方认定公园持刀袭击为恐袭']
+2020-06-24 11:32:52 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_3881380517_e7592aa502000wm3f.html
+2020-06-24 11:32:55 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1887344341_m707e96d502000wd8i.html
+2020-06-24 11:32:55 [SinaSpider] INFO: ['《哥谭》现实版？美国“警察”被吊在桥上 头上还戴着猪头面具']
+2020-06-24 11:32:58 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2375086267_8d90f0bb0190122rt.html
+2020-06-24 11:32:58 [SinaSpider] INFO: ['英国街头因“独狼”袭击重现恐怖气氛']
+2020-06-24 11:32:58 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2375086267_8d90f0bb0190122rt.html
+2020-06-24 11:33:04 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6437909728_17fbab4e000100t1mc.html
+2020-06-24 11:33:04 [SinaSpider] INFO: ['利比亚男子移民英国后因犯罪被捕，出狱后又带刀闯入公园杀死3人']
+2020-06-24 11:33:06 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6192085227_m17113b8eb03300rce6.html
+2020-06-24 11:33:06 [SinaSpider] INFO: ['男子驾车撞中国驻阿根廷大使馆大楼前门……']
+2020-06-24 11:33:08 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5641375955_1504090d302000p6ts.html
+2020-06-24 11:33:08 [SinaSpider] INFO: ['英国男子醉酒嘲笑警察是秃头，遭其暴力对待，结果涉事警察被开除']
+2020-06-24 11:33:11 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2019914355_7865727302000seey.html
+2020-06-24 11:33:11 [SinaSpider] INFO: ['不想再躲到地堡了！特朗普罕见警告抗议者们：你们尽管来试一试']
+2020-06-24 11:33:11 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/wm/2020-06-22/doc-iircuyvi9886045.shtml
+2020-06-24 11:33:11 [SinaSpider] INFO: ['特朗普的"塔尔萨归来"是怎么翻车的？']
+2020-06-24 11:33:11 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/wm/2020-06-22/doc-iircuyvi9886045.shtml
+2020-06-24 11:33:13 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7021396710_1a28202e600100o0yk.html
+2020-06-24 11:33:13 [SinaSpider] INFO: ['伊万卡痴迷看着小鲜肉总统，特朗普在一旁表情尴尬，真管不住了啊']
+2020-06-24 11:33:13 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7021396710_1a28202e600100o0yk.html
+2020-06-24 11:33:13 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-22/doc-iirczymk8312368.shtml
+2020-06-24 11:33:13 [SinaSpider] INFO: ['特朗普竞选集会号称百万人参与 当地官员：入场不到6200人']
+2020-06-24 11:33:15 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2105630162_m7d815dd203300qpib.html
+2020-06-24 11:33:15 [SinaSpider] INFO: ['特朗普威胁白宫外抗议者：特勤局可放恶狗用重武器法治']
+2020-06-24 11:33:15 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2105630162_m7d815dd203300qpib.html
+2020-06-24 11:33:20 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6845499631_1980608ef00100uwrb.html
+2020-06-24 11:33:21 [SinaSpider] INFO: ['黑人牙膏或因美国歧视黑人改名，网友：不应该有种族歧视！']
+2020-06-24 11:33:21 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6845499631_1980608ef00100uwrb.html
+2020-06-24 11:33:22 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6909179607_19bd1b6d700100skhs.html
+2020-06-24 11:33:22 [SinaSpider] INFO: ['美国暴乱再次升级，政府的让步，换来的是黑人的无法无天']
+2020-06-24 11:33:23 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-23/doc-iirczymk8524386.shtml
+2020-06-24 11:33:23 [SinaSpider] INFO: ['特朗普这表情，难得一见(图)']
+2020-06-24 11:33:23 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-23/doc-iirczymk8524386.shtml
+2020-06-24 11:33:25 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6437909728_17fbab4e000100syj4.html
+2020-06-24 11:33:25 [SinaSpider] INFO: ['联合国出手了！非洲国家激烈谴责美国，如今全球骚乱都因美而起']
+2020-06-24 11:33:28 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5617133817_14ecea8f900100nzqp.html
+2020-06-24 11:33:28 [SinaSpider] INFO: ['强生停售美白产品，“黑人牙膏”也要改名，中国百年品牌要没了？']
+2020-06-24 11:33:28 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5617133817_14ecea8f900100nzqp.html
+2020-06-24 11:33:31 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2019914355_7865727302000sgpx.html
+2020-06-24 11:33:31 [SinaSpider] INFO: ['和白宫正面硬碰硬！抗议者成立“黑宫自治区”，就在白宫附近']
+2020-06-24 11:33:33 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7351829801_1b634052900100qp3v.html
+2020-06-24 11:33:33 [SinaSpider] INFO: ['谁能拿下美国总统宝座？奥巴马拜登联手出招，白宫面临三大挑战']
+2020-06-24 11:33:33 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7351829801_1b634052900100qp3v.html
+2020-06-24 11:33:34 [SinaSpider] INFO: 解析文章内容 + https://mil.news.sina.com.cn/2020-06-22/doc-iircuyvi9908701.shtml
+2020-06-24 11:33:34 [SinaSpider] INFO: ['特朗普竞选集会被“放鸽”了 TikTok用户功不可没']
+2020-06-24 11:33:34 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://mil.news.sina.com.cn/2020-06-22/doc-iircuyvi9908701.shtml
+2020-06-24 11:33:34 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:33:36 [scrapy.extensions.logstats] INFO: Crawled 346 pages (at 30 pages/min), scraped 182 items (at 14 items/min)
+2020-06-24 11:33:36 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5393135816_m14174b8c803300nzvy.html
+2020-06-24 11:33:36 [SinaSpider] INFO: ['美国华盛顿白宫外以北拉斐特广场……']
+2020-06-24 11:33:39 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6738076658_1919ee3f200100q6pf.html
+2020-06-24 11:33:39 [SinaSpider] INFO: ['特朗普和国防部长，反目成仇！关系崩溃，两人眼看要走到最后一步']
+2020-06-24 11:33:41 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a020013wz8.html
+2020-06-24 11:33:41 [SinaSpider] INFO: ['美国奴隶解放日这天 抗议者拉倒并点燃首都的南方将军雕像']
+2020-06-24 11:33:43 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7365953228_1b70b86cc00100tdl7.html
+2020-06-24 11:33:43 [SinaSpider] INFO: ['美总统连任已成定局？三大因素表明，白宫或许已经胜券在握']
+2020-06-24 11:33:43 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7365953228_1b70b86cc00100tdl7.html
+2020-06-24 11:33:46 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2011075080_77de920802000qxa5.html
+2020-06-24 11:33:46 [SinaSpider] INFO: ['地球局|弗洛伊德身后的世界：抗议—分裂—反思……']
+2020-06-24 11:33:48 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7351829801_1b634052900100qo80.html
+2020-06-24 11:33:48 [SinaSpider] INFO: ['美国或将再次遭重？骚乱席卷全美之际，又一个坏消息从美国传来']
+2020-06-24 11:33:50 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6499990706_m1836dfcb200100ux5v.html
+2020-06-24 11:33:50 [SinaSpider] INFO: ['“一群动物”！特朗普不顾疫情重开竞选集会，次子会上大骂抗议者']
+2020-06-24 11:33:50 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6499990706_m1836dfcb200100ux5v.html
+2020-06-24 11:33:50 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-22/doc-iircuyvi9811859.shtml
+2020-06-24 11:33:50 [SinaSpider] INFO: ['特朗普：太荒谬了，别这么做！']
+2020-06-24 11:33:55 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1887344341_707e96d502000wdcr.html
+2020-06-24 11:33:55 [SinaSpider] INFO: ['“我们的检测有点好得过分了”']
+2020-06-24 11:33:57 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1977460817_m75dda85103300tdyx.html
+2020-06-24 11:33:57 [SinaSpider] INFO: ['白宫官员辩解：说“放慢检测”是“开玩笑”']
+2020-06-24 11:33:57 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-19/doc-iircuyvi9395724.shtml
+2020-06-24 11:33:57 [SinaSpider] INFO: ['旧金山拆哥伦布雕像 官员:他代表美国“痛苦的基石”']
+2020-06-24 11:33:57 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-19/doc-iircuyvi9395724.shtml
+2020-06-24 11:34:00 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001cqx4.html
+2020-06-24 11:34:00 [SinaSpider] INFO: ['出师不利，特朗普神情疲惫走下飞机，领带散开沉默不言']
+2020-06-24 11:34:00 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1655444627_62ac149302001cqx4.html
+2020-06-24 11:34:00 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-20/doc-iirczymk8028637.shtml
+2020-06-24 11:34:00 [SinaSpider] INFO: ['欧洲议会通过决议支持“黑人的命也重要”抗议活动']
+2020-06-24 11:34:00 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:34:02 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6839343950_197a81b4e00100puez.html
+2020-06-24 11:34:02 [SinaSpider] INFO: ['接着忽悠！特朗普夸支持者：来者皆猛士！背地却把他们坑了一顿']
+2020-06-24 11:34:04 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6924861138_19cc0fed200100s33w.html
+2020-06-24 11:34:04 [SinaSpider] INFO: ['特朗普又搞砸了！参加集会的2名团队成员确诊，大量民众陷入恐慌']
+2020-06-24 11:34:04 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6924861138_19cc0fed200100s33w.html
+2020-06-24 11:34:07 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7020147773_1a26ef43d00100ugfj.html
+2020-06-24 11:34:07 [SinaSpider] INFO: ['特朗普败局已定？疫情期间聚众拉选票，场下的大批空座略显惨淡']
+2020-06-24 11:34:09 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1496814565_593793e502000snul.html
+2020-06-24 11:34:09 [SinaSpider] INFO: ['国际观察｜疫情影响或持续数十年，握手拥抱等友善的礼仪会消失吗？']
+2020-06-24 11:34:12 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1893892941_70e2834d02000s2k6.html
+2020-06-24 11:34:12 [SinaSpider] INFO: ['没有人比我更懂……开玩笑']
+2020-06-24 11:34:14 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1270750184_4bbe1be800100v2hg.html
+2020-06-24 11:34:14 [SinaSpider] INFO: ['实锤！美国新冠检测造假']
+2020-06-24 11:34:17 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6036064462_167c708ce00100tnjo.html
+2020-06-24 11:34:17 [SinaSpider] INFO: ['难怪美国开始不建议民众戴口罩，福奇终于说出真相，果然不出所料']
+2020-06-24 11:34:19 [SinaSpider] INFO: 解析文章内容 + https://k.sina.cn/article_1574618515_v5ddac59301900tmvy.html?from=mil
+2020-06-24 11:34:19 [SinaSpider] INFO: ['\n             美国的2020是退还是进？\n          ']
+2020-06-24 11:34:19 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.cn/article_1574618515_v5ddac59301900tmvy.html?from=mil
+2020-06-24 11:34:21 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6536947114_185a1e5aa00100ovsc.html
+2020-06-24 11:34:21 [SinaSpider] INFO: ['搞大的？美国抗议者们建立“黑宫自治区”，这次就在白宫门口']
+2020-06-24 11:34:21 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-18/doc-iircuyvi9142527.shtml
+2020-06-24 11:34:21 [SinaSpider] INFO: ['发火了！特朗普要求起诉白宫地堡消息泄密人']
+2020-06-24 11:34:21 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-18/doc-iircuyvi9142527.shtml
+2020-06-24 11:34:22 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6562483877_187278ea500100r561.html
+2020-06-24 11:34:22 [SinaSpider] INFO: ['特朗普调集重兵，5000名美军和防暴警察进驻，“起义军”进攻失败']
+2020-06-24 11:34:22 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6562483877_187278ea500100r561.html
+2020-06-24 11:34:22 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:34:24 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001cvjq.html
+2020-06-24 11:34:25 [SinaSpider] INFO: ['为大选，特朗普要“催熟”新冠疫苗？']
+2020-06-24 11:34:27 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_3121600265_ba0fd70900100w1sk.html
+2020-06-24 11:34:27 [SinaSpider] INFO: ['特朗普首次竞选集会遭遇冷场，美媒：彻底失败']
+2020-06-24 11:34:29 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6405076884_m17dc5b79403300mich.html
+2020-06-24 11:34:29 [SinaSpider] INFO: ['特朗普无法翻篇“走斜坡被嘲” 抱怨辩解自演自嘲全来了']
+2020-06-24 11:34:32 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1402038067_m5391673303300so2x.html
+2020-06-24 11:34:32 [SinaSpider] INFO: ['21日凌晨，在结束了近两个小时的演讲后……']
+2020-06-24 11:34:32 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1402038067_m5391673303300so2x.html
+2020-06-24 11:34:35 [SinaSpider] INFO: 解析文章内容 + https://k.sina.cn/article_6533241521_185695ab100100ovew.html?from=news
+2020-06-24 11:34:35 [SinaSpider] INFO: ['\n             真是自作虐！硬是把法国玩成了黑人国家，法国白人被驱赶？\n          ']
+2020-06-24 11:34:35 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.cn/article_6533241521_185695ab100100ovew.html?from=news
+2020-06-24 11:34:36 [scrapy.extensions.logstats] INFO: Crawled 377 pages (at 31 pages/min), scraped 201 items (at 19 items/min)
+2020-06-24 11:34:38 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6192085227_m17113b8eb03300rbik.html
+2020-06-24 11:34:38 [SinaSpider] INFO: ['确诊超227万特朗普宣称“放慢检测” 白宫官员：他在开玩笑']
+2020-06-24 11:34:38 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6192085227_m17113b8eb03300rbik.html
+2020-06-24 11:34:40 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6531737414_18552674600100thyj.html
+2020-06-24 11:34:40 [SinaSpider] INFO: ['特朗普最担心之事发生！新一波抗议狂潮席卷全美，奥巴马煽风点火']
+2020-06-24 11:34:43 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7366179346_1b70efa1200100psnh.html
+2020-06-24 11:34:43 [SinaSpider] INFO: ['美国走向闭关道路？为保住美国人的饭碗，美总统终于使出了杀手锏']
+2020-06-24 11:34:45 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6476549893_182084f0500100qr9w.html
+2020-06-24 11:34:45 [SinaSpider] INFO: ['特朗普单手举杯喝水，连喝两口后将杯子摔地，现场群众欢呼如雷鸣']
+2020-06-24 11:34:45 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6476549893_182084f0500100qr9w.html
+2020-06-24 11:34:47 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2375086267_8d90f0bb0190122n9.html
+2020-06-24 11:34:47 [SinaSpider] INFO: ['谁在支持特朗普？']
+2020-06-24 11:34:49 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7235451609_1af443ad900100u5rx.html
+2020-06-24 11:34:49 [SinaSpider] INFO: ['特朗普彻底怒了：立刻逮捕，这是国家耻辱！']
+2020-06-24 11:34:50 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/1887344341/707e96d502000wce7
+2020-06-24 11:34:50 [SinaSpider] INFO: ['美国总统大选投票给拜登？博尔顿澄清：我谁也不投']
+2020-06-24 11:34:50 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/1887344341/707e96d502000wce7
+2020-06-24 11:34:50 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/wm/2020-06-24/doc-iirczymk8667631.shtml
+2020-06-24 11:34:50 [SinaSpider] INFO: ['特朗普回应“黑宫”：谁敢搞“自治区”，就等着严重武力打击！']
+2020-06-24 11:34:50 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/wm/2020-06-24/doc-iirczymk8667631.shtml
+2020-06-24 11:34:52 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6434950669_17f8d8e0d00100ludj.html
+2020-06-24 11:34:52 [SinaSpider] INFO: ['终究没逃过一劫！美历史第一人雕像被推翻，特朗普最担心之事发生']
+2020-06-24 11:34:52 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-19/doc-iircuyvi9328464.shtml
+2020-06-24 11:34:52 [SinaSpider] INFO: ['博尔顿新书内容曝光后 蓬佩奥痛骂：卖国贼']
+2020-06-24 11:34:54 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1893801487_m70e11e0f03300yc72.html
+2020-06-24 11:34:54 [SinaSpider] INFO: ['华盛顿南方邦联将领雕像被抗议者拉倒焚烧']
+2020-06-24 11:34:54 [SinaSpider] INFO: 解析文章内容 + https://mil.news.sina.com.cn/2020-06-23/doc-iirczymk8473023.shtml
+2020-06-24 11:34:54 [SinaSpider] INFO: ['美前国安顾问博尔顿新书今日发行 盗版已在网络流传']
+2020-06-24 11:34:54 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:34:57 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2174585797_m819d8bc503300z167.html
+2020-06-24 11:34:57 [SinaSpider] INFO: ['刚刚，又一座联邦军的雕像倒了！']
+2020-06-24 11:34:57 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2174585797_m819d8bc503300z167.html
+2020-06-24 11:35:00 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1841812881_m6dc7d59105700s11v.html
+2020-06-24 11:35:00 [SinaSpider] INFO: ['特朗普刚发推说这是国家之耻……']
+2020-06-24 11:35:00 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1841812881_m6dc7d59105700s11v.html
+2020-06-24 11:35:00 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/wm/2020-06-23/doc-iircuyvk0009738.shtml
+2020-06-24 11:35:00 [SinaSpider] INFO: ['谁在支持特朗普？']
+2020-06-24 11:35:01 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1403497553_m53a7ac5103300qvhz.html
+2020-06-24 11:35:01 [SinaSpider] INFO: ['真的把华盛顿像推倒了…这是要造反？ 当地时间18日晚间……']
+2020-06-24 11:35:04 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6875586274_199d11ee200100pgze.html
+2020-06-24 11:35:04 [SinaSpider] INFO: ['佩洛西：特朗普不仅在道德上不适合做总统，在智力上也不适合']
+2020-06-24 11:35:04 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/wm/2020-06-23/doc-iircuyvi9998350.shtml
+2020-06-24 11:35:04 [SinaSpider] INFO: ['特朗普又改口：可能死15万，没准更多……']
+2020-06-24 11:35:04 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/wm/2020-06-23/doc-iircuyvi9998350.shtml
+2020-06-24 11:35:07 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7365951623_1b70b808700100phdx.html
+2020-06-24 11:35:07 [SinaSpider] INFO: ['谁来拯救美国？混乱不断升级，两党纷争再起，总统雕像也“中招”']
+2020-06-24 11:35:10 [SinaSpider] INFO: 解析文章内容 + https://k.sina.cn/article_5901273815_v15fbe4ad701900o7cs.html?from=history
+2020-06-24 11:35:10 [SinaSpider] INFO: ['\n             “疫”乱美国：近12万人丧生，美国能否承受漠视科学之痛？\n          ']
+2020-06-24 11:35:10 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.cn/article_5901273815_v15fbe4ad701900o7cs.html?from=history
+2020-06-24 11:35:11 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6536271003_18597949b00100peou.html
+2020-06-24 11:35:12 [SinaSpider] INFO: ['美国大规模示威暴动升级：拆毁大量雕塑，连哥伦布雕塑都不放过！']
+2020-06-24 11:35:14 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2596119483_m9abda3bb03300r3wz.html
+2020-06-24 11:35:14 [SinaSpider] INFO: ['特朗普提议立法惩治烧国旗者：送他们去坐1年牢']
+2020-06-24 11:35:14 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-20/doc-iircuyvi9544865.shtml
+2020-06-24 11:35:14 [SinaSpider] INFO: ['示威者做了这件事后 特朗普怒了：立即逮捕 国家耻辱']
+2020-06-24 11:35:14 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-20/doc-iircuyvi9544865.shtml
+2020-06-24 11:35:14 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/2740584537/va35a005901900t0eh
+2020-06-24 11:35:14 [SinaSpider] INFO: ['给病毒起19个名字，特朗普这次让CNN都看不下去了']
+2020-06-24 11:35:14 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/2740584537/va35a005901900t0eh
+2020-06-24 11:35:16 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6935207075_19d5edca300100rro7.html
+2020-06-24 11:35:16 [SinaSpider] INFO: ['美国第一个自治区要诞生了！路障围栏做好防护，特朗普很是无奈']
+2020-06-24 11:35:19 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6036064462_167c708ce00100tlxo.html
+2020-06-24 11:35:19 [SinaSpider] INFO: ['黑人抗议已变味，占领西雅图后出霸王条款，网友：分裂已成定局？']
+2020-06-24 11:35:21 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5336533996_m13e150bec03300wbdp.html
+2020-06-24 11:35:21 [SinaSpider] INFO: ['美国抗议者在市长家门口成立自治区 警察半小时清理现场']
+2020-06-24 11:35:21 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5336533996_m13e150bec03300wbdp.html
+2020-06-24 11:35:23 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1974576991_75b1a75f01900rwny.html
+2020-06-24 11:35:23 [SinaSpider] INFO: ['美国不要警察的自治区，致命的情况还是发生了……']
+2020-06-24 11:35:25 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1974576991_75b1a75f01900rvwc.html
+2020-06-24 11:35:25 [SinaSpider] INFO: ['特朗普公开威胁！']
+2020-06-24 11:35:25 [SinaSpider] INFO: 解析文章内容 + https://sports.sina.com.cn/basketball/nba/2020-06-21/doc-iircuyvi9633080.shtml
+2020-06-24 11:35:25 [SinaSpider] INFO: ['旧金山进行运球抗议活动 运球8分46秒纪念乔治']
+2020-06-24 11:35:25 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://sports.sina.com.cn/basketball/nba/2020-06-21/doc-iircuyvi9633080.shtml
+2020-06-24 11:35:26 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6300853659_m1778f659b03300qp4g.html
+2020-06-24 11:35:26 [SinaSpider] INFO: ['美国男子汽车店遭抗议者围攻 老板报警19次 警察：不去！']
+2020-06-24 11:35:26 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6300853659_m1778f659b03300qp4g.html
+2020-06-24 11:35:29 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6342451737_17a0a221902000sfrt.html
+2020-06-24 11:35:29 [SinaSpider] INFO: ['国际观察｜特朗普签署警方执法行政令，自称“世界最强最高标准”']
+2020-06-24 11:35:29 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-22/doc-iircuyvi9889730.shtml
+2020-06-24 11:35:29 [SinaSpider] INFO: ['特朗普竞选集会上对没戴口罩的人说：希望放慢美国对新冠病毒的检测']
+2020-06-24 11:35:29 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-22/doc-iircuyvi9889730.shtml
+2020-06-24 11:35:31 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1893892941_70e2834d02000ryu4.html
+2020-06-24 11:35:31 [SinaSpider] INFO: ['美国小规模抗议活动持续 特朗普签警察执法行政令']
+2020-06-24 11:35:33 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2498948744_m94f2ee8803300o9ub.html
+2020-06-24 11:35:33 [SinaSpider] INFO: ['西雅图自治区好哈皮，连理发的都有，就快形成完整社会了']
+2020-06-24 11:35:33 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2498948744_m94f2ee8803300o9ub.html
+2020-06-24 11:35:35 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6935212035_19d5ef00300100s368.html
+2020-06-24 11:35:35 [SinaSpider] INFO: ['美首个独立地区局势不妙！不明身份者持枪警戒，火力超国民警卫队']
+2020-06-24 11:35:35 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/2041550355/v79af961301900u6wo
+2020-06-24 11:35:35 [SinaSpider] INFO: ['全球确诊超900万！世卫组织：新冠将影响数十年']
+2020-06-24 11:35:35 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/2041550355/v79af961301900u6wo
+2020-06-24 11:35:36 [scrapy.extensions.logstats] INFO: Crawled 415 pages (at 38 pages/min), scraped 222 items (at 21 items/min)
+2020-06-24 11:35:37 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5641375955_1504090d302000p6mr.html
+2020-06-24 11:35:37 [SinaSpider] INFO: ['一出好戏！前白宫发言人也写书爆料：博尔顿自大，被同事破口大骂']
+2020-06-24 11:35:37 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5641375955_1504090d302000p6mr.html
+2020-06-24 11:35:40 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6875586274_199d11ee200100pfd0.html
+2020-06-24 11:35:40 [SinaSpider] INFO: ['美国前国家安全顾问要出书，涉敏感内容，特朗普：不准出不然告你']
+2020-06-24 11:35:43 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1887344341_707e96d502000wcux.html
+2020-06-24 11:35:43 [SinaSpider] INFO: ['“他就不该当总统，一届还能忍”']
+2020-06-24 11:35:43 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/3037284894/b5094a1e02000v2cp
+2020-06-24 11:35:43 [SinaSpider] INFO: ['特朗普又双叒叕改口丨全球疫情20条最新信息']
+2020-06-24 11:35:43 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://cj.sina.com.cn/articles/view/3037284894/b5094a1e02000v2cp
+2020-06-24 11:35:45 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1277071452_4c1e905c00100phwc.html
+2020-06-24 11:35:45 [SinaSpider] INFO: ['这是特朗普现在最愤怒的事情，半夜还在发火！']
+2020-06-24 11:35:48 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a019013uh5.html
+2020-06-24 11:35:48 [SinaSpider] INFO: ['“笔尖”已经有了反应，蔡英文还是没有反应……']
+2020-06-24 11:35:48 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1686546714_6486a91a019013uh5.html
+2020-06-24 11:35:51 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1658273503_62d73edf02000o5e1.html
+2020-06-24 11:35:51 [SinaSpider] INFO: ['特朗普为了一本书，控告前最高级官员！被告很恼怒，决定无视总统']
+2020-06-24 11:35:51 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:35:51 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-23/doc-iirczymk8609941.shtml
+2020-06-24 11:35:51 [SinaSpider] INFO: ['终于想起"白"宫了？美国抗议者试图设立"黑宫自治区"']
+2020-06-24 11:35:51 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-23/doc-iirczymk8609941.shtml
+2020-06-24 11:35:54 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1496814565_593793e502000siyf.html
+2020-06-24 11:35:54 [SinaSpider] INFO: ['美国司法部暂停博尔顿新书出版，一旦被起诉他还将面临刑事诉讼']
+2020-06-24 11:35:56 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1974576991_75b1a75f01900rwa4.html
+2020-06-24 11:35:56 [SinaSpider] INFO: ['特朗普没挡住']
+2020-06-24 11:35:57 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a019013yut.html
+2020-06-24 11:35:57 [SinaSpider] INFO: ['“舔美派”要痛哭流涕了......']
+2020-06-24 11:35:57 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1686546714_6486a91a019013yut.html
+2020-06-24 11:36:02 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7056010143_1a4922b9f02000pg7x.html
+2020-06-24 11:36:02 [SinaSpider] INFO: ['让美总统最担心的事，还是发生了']
+2020-06-24 11:36:02 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-23/doc-iircuyvk0066334.shtml
+2020-06-24 11:36:02 [SinaSpider] INFO: ['美国抗议现场震惊一幕：警察卸掉双腿残疾男子的假肢']
+2020-06-24 11:36:02 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-23/doc-iircuyvk0066334.shtml
+2020-06-24 11:36:02 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/3205514555/vbf10453b02000sf6h
+2020-06-24 11:36:02 [SinaSpider] INFO: ['撕裂族群 本届白宫的“神操作”']
+2020-06-24 11:36:05 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1914880192_7222c0c002000ucgd.html
+2020-06-24 11:36:05 [SinaSpider] INFO: ['博尔顿新书曝特朗普曾表示“不想参与”香港议题，承认美国存在人权问题']
+2020-06-24 11:36:05 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1914880192_7222c0c002000ucgd.html
+2020-06-24 11:36:07 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6671129219_18da15a8300100pp28.html
+2020-06-24 11:36:07 [SinaSpider] INFO: ['伊万卡曾陷"邮件门"，全靠老爸挺身而出，转移各界视线而过关']
+2020-06-24 11:36:07 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6671129219_18da15a8300100pp28.html
+2020-06-24 11:36:09 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6192085227_m17113b8eb03300rchj.html
+2020-06-24 11:36:09 [SinaSpider] INFO: ['大选在即 民调落后连任堪忧： 盘点让特朗普郁闷的四件事']
+2020-06-24 11:36:12 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7460909477_1bcb471a502000rc9g.html
+2020-06-24 11:36:12 [SinaSpider] INFO: ['特朗普将禁止四类签证，把工作还给50万美国人；细节耐人寻味']
+2020-06-24 11:36:14 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6496413673_m1833767e900100lzpw.html
+2020-06-24 11:36:14 [SinaSpider] INFO: ['特朗普这回闯下大祸了，美军突然传来一个噩耗：疫情控制不住了']
+2020-06-24 11:36:14 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6496413673_m1833767e900100lzpw.html
+2020-06-24 11:36:17 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2584551281_9a0d1f7100100o2yp.html
+2020-06-24 11:36:17 [SinaSpider] INFO: ['第五次！留给特朗普“变脸”的时间不多了！']
+2020-06-24 11:36:17 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2584551281_9a0d1f7100100o2yp.html
+2020-06-24 11:36:20 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1708533224_65d625e802000u1lm.html
+2020-06-24 11:36:20 [SinaSpider] INFO: ['选情告急，特朗普再拿签证开刀？谁受影响？']
+2020-06-24 11:36:22 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6066193547_m16992c48b03300n7eh.html
+2020-06-24 11:36:22 [SinaSpider] INFO: ['保护本土就业……']
+2020-06-24 11:36:22 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6066193547_m16992c48b03300n7eh.html
+2020-06-24 11:36:24 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2039807951_m7994ffcf03300qe6w.html
+2020-06-24 11:36:24 [SinaSpider] INFO: ['结束疫情暴发以来首场集会，特朗普疲惫不堪返回白宫']
+2020-06-24 11:36:24 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2039807951_m7994ffcf03300qe6w.html
+2020-06-24 11:36:29 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6895930157_19b078b2d00100rfsd.html
+2020-06-24 11:36:29 [SinaSpider] INFO: ['特朗普当众丢脸！号称上百万集会现场只来6200，却仍然在装傻']
+2020-06-24 11:36:32 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5782486271_158a9bcff00100ogto.html
+2020-06-24 11:36:32 [SinaSpider] INFO: ['特朗普面对众多支持者扬言：我是总统，你们太幸运了']
+2020-06-24 11:36:34 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_3121600265_ba0fd70900100w2z0.html
+2020-06-24 11:36:34 [SinaSpider] INFO: ['白宫附近再现抗议示威 特勤局要求白宫记者紧急撤离']
+2020-06-24 11:36:34 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_3121600265_ba0fd70900100w2z0.html
+2020-06-24 11:36:36 [scrapy.extensions.logstats] INFO: Crawled 442 pages (at 27 pages/min), scraped 235 items (at 13 items/min)
+2020-06-24 11:36:37 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5999251130_m165954eba03300r1qc.html
+2020-06-24 11:36:37 [SinaSpider] INFO: ['特朗普：如果有人焚燒美國國旗，送他們去坐一年牢']
+2020-06-24 11:36:37 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5999251130_m165954eba03300r1qc.html
+2020-06-24 11:36:40 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1977460817_m75dda85103300tbu4.html
+2020-06-24 11:36:40 [SinaSpider] INFO: ['特朗普对抗议者放狠话 塔尔萨竞选集会当天任何抗议者都会被严厉']
+2020-06-24 11:36:42 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6221932120_m172db265803300lvj7.html
+2020-06-24 11:36:42 [SinaSpider] INFO: ['特朗普称“测得越少病例越少” 纳瓦罗：他开玩笑的']
+2020-06-24 11:36:45 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1893801487_m70e11e0f03300ydrz.html
+2020-06-24 11:36:45 [SinaSpider] INFO: ['特朗普称美国新冠病毒检测做得太好']
+2020-06-24 11:36:45 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1893801487_m70e11e0f03300ydrz.html
+2020-06-24 11:36:46 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6972258562_19f94390200100ofhg.html
+2020-06-24 11:36:46 [SinaSpider] INFO: ['美国确诊激增上231万！死超12万，世卫：表明病毒在广泛传播']
+2020-06-24 11:36:46 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6972258562_19f94390200100ofhg.html
+2020-06-24 11:36:48 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6429408044_17f38fb2c00100ovuq.html
+2020-06-24 11:36:48 [SinaSpider] INFO: ['特朗普宣布美国疫情已经结束']
+2020-06-24 11:36:51 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6444753008_18023207000100u6o4.html
+2020-06-24 11:36:51 [SinaSpider] INFO: ['罗生门！为阻止暴动取消隔离，还是打击疫情，特朗普该如何选择？']
+2020-06-24 11:36:54 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1681029540_643279a4001010dfi.html
+2020-06-24 11:36:54 [SinaSpider] INFO: ['美国抗疫，一塌糊涂！瞒报、出口病毒，竟是常态……']
+2020-06-24 11:36:56 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6839343950_197a81b4e00100puf5.html
+2020-06-24 11:36:56 [SinaSpider] INFO: ['特朗普选情危险了！号称百万人订票却惨遭冷场，美媒：彻底失败']
+2020-06-24 11:36:56 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-18/doc-iircuyvi9151585.shtml
+2020-06-24 11:36:56 [SinaSpider] INFO: ['美国延长对朝鲜制裁一年 博尔顿新书曝美国务卿曾预感朝美外交"0成功"']
+2020-06-24 11:36:56 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-18/doc-iircuyvi9151585.shtml
+2020-06-24 11:36:58 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001cw5k.html
+2020-06-24 11:36:58 [SinaSpider] INFO: ['特朗普第四次改口：美国新冠死亡人数可能会达15万']
+2020-06-24 11:36:58 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1655444627_62ac149302001cw5k.html
+2020-06-24 11:36:59 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-19/doc-iircuyvi9312460.shtml
+2020-06-24 11:36:59 [SinaSpider] INFO: ['佩洛西批博尔顿：弹劾案不愿来国会作证 却卖书捞钱出卖国家利益']
+2020-06-24 11:37:01 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1496814565_m593793e502000snly.html
+2020-06-24 11:37:01 [SinaSpider] INFO: ['30秒｜白宫经济顾问短暂回归后再次离职，曾对GDP做悲观预测']
+2020-06-24 11:37:01 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1496814565_m593793e502000snly.html
+2020-06-24 11:37:04 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6436351962_17fa2efda00100qgru.html
+2020-06-24 11:37:04 [SinaSpider] INFO: ['首场集会遭遇滑铁卢，100万人申请只来了6200人，特朗普表情悲伤']
+2020-06-24 11:37:04 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6436351962_17fa2efda00100qgru.html
+2020-06-24 11:37:06 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6439981673_17fda526900100oumq.html
+2020-06-24 11:37:06 [SinaSpider] INFO: ['噩耗，这一次还是噩耗！6月23日，全球传来两个“惨痛恶讯”！']
+2020-06-24 11:37:06 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6439981673_17fda526900100oumq.html
+2020-06-24 11:37:07 [SinaSpider] INFO: 解析文章内容 + https://mil.news.sina.com.cn/2020-06-19/doc-iirczymk7824829.shtml
+2020-06-24 11:37:07 [SinaSpider] INFO: ['胡锡进："台独港独"看看 你们在美国眼中的真实位置']
+2020-06-24 11:37:07 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://mil.news.sina.com.cn/2020-06-19/doc-iirczymk7824829.shtml
+2020-06-24 11:37:07 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-18/doc-iircuyvi9142498.shtml
+2020-06-24 11:37:07 [SinaSpider] INFO: ['博尔顿称特朗普一再说谎 并曾打算威胁美国退出北约']
+2020-06-24 11:37:07 [SinaSpider] INFO: [相关新闻的抽取]中-----------------------------------
+2020-06-24 11:37:09 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2908172597_mad57313505301wkcx.html
+2020-06-24 11:37:09 [SinaSpider] INFO: ['继续追踪美国华盛顿现场白宫警卫室被纵火警察发射催泪驱散抗议者']
+2020-06-24 11:37:12 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6145283913_m16e499749020013fjj.html
+2020-06-24 11:37:12 [SinaSpider] INFO: ['美国：华盛顿警方驱散抗议者  白宫附近爆发冲突']
+2020-06-24 11:37:12 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6145283913_m16e499749020013fjj.html
+2020-06-24 11:37:14 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6589325642_m188c1214a05300syir.html
+2020-06-24 11:37:15 [SinaSpider] INFO: ['白宫外数千人抗议者唱着《依靠我》……']
+2020-06-24 11:37:15 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6589325642_m188c1214a05300syir.html
+2020-06-24 11:37:17 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6533586654_1856e9ede00100skul.html
+2020-06-24 11:37:17 [SinaSpider] INFO: ['美国全国大乱！特朗普被逼做出“屈辱”决定，美民众：这回真完了']
+2020-06-24 11:37:17 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/stock/usstock/c/2020-06-20/doc-iircuyvi9518308.shtml
+2020-06-24 11:37:17 [SinaSpider] INFO: ['博尔顿592页新书起底白宫 揭特朗普与蓬佩奥“貌合神离”']
+2020-06-24 11:37:17 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/stock/usstock/c/2020-06-20/doc-iircuyvi9518308.shtml
+2020-06-24 11:37:19 [SinaSpider] INFO: 解析文章内容 + https://k.sina.cn/article_6648831916_18c4d1fac00100myzk.html?from=news
+2020-06-24 11:37:19 [SinaSpider] INFO: ['\n             特朗普8大神奇事件，一天之内全部曝光！前高官把它们都抖出来了\n          ']
+2020-06-24 11:37:22 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6962285118_19efc0a3e00100rm3e.html
+2020-06-24 11:37:22 [SinaSpider] INFO: ['美国第二次内战爆发！五角大楼向警察开火，白宫拒绝回应质疑']
+2020-06-24 11:37:23 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6533234518_185693f5600100u6yq.html
+2020-06-24 11:37:23 [SinaSpider] INFO: ['纽约市民半夜在市长家外抗议烟花扰民：我们睡不了，你也别想睡！']
+2020-06-24 11:37:26 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6495997775_m183310f4f00100ny40.html
+2020-06-24 11:37:26 [SinaSpider] INFO: ['北美观察丨示威者聚集白宫！特朗普躲进地下室？警察加入抗议游行']
+2020-06-24 11:37:26 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6495997775_m183310f4f00100ny40.html
+2020-06-24 11:37:28 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6923582712_19cad7cf800100ogju.html
+2020-06-24 11:37:28 [SinaSpider] INFO: ['美国拒绝再当世界警察，不愿为外国打仗流血，俄媒评价一针见血']
+2020-06-24 11:37:29 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/w/2020-06-23/doc-iircuyvi9986413.shtml
+2020-06-24 11:37:29 [SinaSpider] INFO: ['新书出版在即，特朗普急到骂人']
+2020-06-24 11:37:29 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/w/2020-06-23/doc-iircuyvi9986413.shtml
+2020-06-24 11:37:31 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6221932120_m172db265803300lt3i.html
+2020-06-24 11:37:31 [SinaSpider] INFO: ['特朗普推出警务改革 佩洛西：没充分解决“种族歧视和警察暴行”']
+2020-06-24 11:37:31 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6221932120_m172db265803300lt3i.html
+2020-06-24 11:37:32 [SinaSpider] INFO: 解析文章内容 + https://cj.sina.com.cn/articles/view/3860416827/e619493b01900rsxh
+2020-06-24 11:37:32 [SinaSpider] INFO: ['【解读】赵明昊：煽动对抗不是应对“美国之困”的良策']
+2020-06-24 11:37:32 [scrapy.core.engine] INFO: Closing spider (closespider_itemcount)
+2020-06-24 11:37:34 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6192085227_m17113b8eb03300r9mb.html
+2020-06-24 11:37:34 [SinaSpider] INFO: ['特朗普：西雅图无政府主义者也“建墙”……']
+2020-06-24 11:37:34 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6192085227_m17113b8eb03300r9mb.html
+2020-06-24 11:37:36 [scrapy.extensions.logstats] INFO: Crawled 474 pages (at 32 pages/min), scraped 250 items (at 15 items/min)
+2020-06-24 11:37:37 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1887344341_707e96d502000wdf0.html
+2020-06-24 11:37:37 [SinaSpider] INFO: ['“黑宫自治区”示威者行为激进，特朗普发推特警告：小心坐10年牢']
+2020-06-24 11:37:37 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1887344341_707e96d502000wdf0.html
+2020-06-24 11:37:39 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1592917513_5ef1fe0902700rfmu.html
+2020-06-24 11:37:39 [SinaSpider] INFO: ['“惊人”反转！美英白人高喊：你们要的不是正义，而是无休止的暴乱！']
+2020-06-24 11:37:42 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1655444627_62ac149302001ct6j.html
+2020-06-24 11:37:42 [SinaSpider] INFO: ['发生两起枪击事件，美国西雅图将取缔“国会山自治区”']
+2020-06-24 11:37:45 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7453591278_1bc44c6ee00100sis7.html
+2020-06-24 11:37:45 [SinaSpider] INFO: ['美国暴乱突然没有了消息？是已经控制住了吗？']
+2020-06-24 11:37:45 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7453591278_1bc44c6ee00100sis7.html
+2020-06-24 11:37:48 [SinaSpider] INFO: 解析文章内容 + https://k.sina.cn/article_2728474252_ma2a1368c03300sl03.html?from=news&subch=onews
+2020-06-24 11:37:48 [SinaSpider] INFO: []
+2020-06-24 11:37:48 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.cn/article_2728474252_ma2a1368c03300sl03.html?from=news&subch=onews
+2020-06-24 11:37:50 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_7043745154_1a3d7058200100r8xn.html
+2020-06-24 11:37:50 [SinaSpider] INFO: ['西雅图自治区成笑话！示威者请求物资救援，美民众：农夫与蛇！']
+2020-06-24 11:37:50 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_7043745154_1a3d7058200100r8xn.html
+2020-06-24 11:37:53 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6145283913_16e499749020013fcj.html
+2020-06-24 11:37:53 [SinaSpider] INFO: ['美国示威抗议活动导致各地雕像被大量推翻毁坏']
+2020-06-24 11:37:55 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6192085227_m17113b8eb03300rcdb.html
+2020-06-24 11:37:55 [SinaSpider] INFO: ['因连日来枪击案频发……']
+2020-06-24 11:37:55 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6192085227_m17113b8eb03300rcdb.html
+2020-06-24 11:37:58 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6617239163_18a6b0e7b00100quyq.html
+2020-06-24 11:37:58 [SinaSpider] INFO: ['美国暴乱闹了半个月，没收入的黑人靠什么吃饭？说出来你可能不信']
+2020-06-24 11:38:00 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6617239163_18a6b0e7b00100quyp.html
+2020-06-24 11:38:00 [SinaSpider] INFO: ['抗议行动已“变味”，黑人阴谋暴露，污蔑我们侵犯他们权益']
+2020-06-24 11:38:02 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6890881896_19aba8368001011op7.html
+2020-06-24 11:38:02 [SinaSpider] INFO: ['美国“起义军”战败了：2次攻打波特兰市区失败，大批装甲车镇压']
+2020-06-24 11:38:03 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6445105476_18028814400100q94g.html
+2020-06-24 11:38:03 [SinaSpider] INFO: ['美国广大乡村也乱了，真正的“星星之火”被点燃']
+2020-06-24 11:38:06 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1611998284_6015244c02000s1wj.html
+2020-06-24 11:38:06 [SinaSpider] INFO: ['7天后这本新书上市，特朗普大怒！威胁作者博尔顿：你要坐牢了']
+2020-06-24 11:38:06 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1611998284_6015244c02000s1wj.html
+2020-06-24 11:38:08 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5617133817_14ecea8f900100o054.html
+2020-06-24 11:38:08 [SinaSpider] INFO: ['特朗普无法挡住！']
+2020-06-24 11:38:13 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6909179607_19bd1b6d700100sjsx.html
+2020-06-24 11:38:13 [SinaSpider] INFO: ['博尔顿炮轰特朗普：他只关心连任，根本没能力胜任总统']
+2020-06-24 11:38:15 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1496814565_m593793e502000smjc.html
+2020-06-24 11:38:15 [SinaSpider] INFO: ['30秒丨博尔顿称不会投票给特朗普或拜登：他们不适合当总统']
+2020-06-24 11:38:15 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1496814565_m593793e502000smjc.html
+2020-06-24 11:38:17 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6507583804_183e1d93c00100ozkb.html
+2020-06-24 11:38:17 [SinaSpider] INFO: ['美国前国家安全顾问：特朗普极其无知，普京对付他“跟玩一样”']
+2020-06-24 11:38:17 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6507583804_183e1d93c00100ozkb.html
+2020-06-24 11:38:19 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1643971635_m61fd043303300oagw.html
+2020-06-24 11:38:19 [SinaSpider] INFO: ['博尔顿：特朗普不适合担任美国总统']
+2020-06-24 11:38:19 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1643971635_m61fd043303300oagw.html
+2020-06-24 11:38:21 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5328858693_13d9fee4502000vcwk.html
+2020-06-24 11:38:21 [SinaSpider] INFO: ['反对无效！特朗普眼睁睁看着“诋毁”自己的书上市']
+2020-06-24 11:38:23 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6507585641_183e1e06900100tbey.html
+2020-06-24 11:38:23 [SinaSpider] INFO: ['拒绝执行特朗普命令？五角大楼故意拖延撤军步伐，俄称成孤家寡人']
+2020-06-24 11:38:23 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6507585641_183e1e06900100tbey.html
+2020-06-24 11:38:26 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1887344341_707e96d502000wa8y.html
+2020-06-24 11:38:26 [SinaSpider] INFO: ['特朗普气坏了：蠢货、笨死了！一天到晚只想着打仗']
+2020-06-24 11:38:28 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6499699970_m183698d0200100o919.html
+2020-06-24 11:38:28 [SinaSpider] INFO: ['美军四星上将公开道歉，不该摆拍，美军高层与总统特朗普闹掰了？']
+2020-06-24 11:38:28 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6499699970_m183698d0200100o919.html
+2020-06-24 11:38:30 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2019914355_7865727302000sedb.html
+2020-06-24 11:38:30 [SinaSpider] INFO: ['五角大楼掀起离职潮！半月内3名高官递交辞呈，特朗普成关键诱因']
+2020-06-24 11:38:33 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1638144075_m61a4184b00100o4pk.html
+2020-06-24 11:38:33 [SinaSpider] INFO: ['拒绝出兵公然唱反调，美防长饭碗差点不保，特朗普却立马变脸']
+2020-06-24 11:38:33 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1638144075_m61a4184b00100o4pk.html
+2020-06-24 11:38:36 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1686546714_6486a91a020013uvw.html
+2020-06-24 11:38:36 [SinaSpider] INFO: ['传记小说畅销书：“白宫风云”，总统和“身边人”都爱写']
+2020-06-24 11:38:36 [scrapy.extensions.logstats] INFO: Crawled 499 pages (at 25 pages/min), scraped 263 items (at 13 items/min)
+2020-06-24 11:38:39 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6935207075_19d5edca300100ru51.html
+2020-06-24 11:38:39 [SinaSpider] INFO: ['美国内讧彻底爆发！美防长也难逃特朗普魔爪，更大的乱局将要来临']
+2020-06-24 11:38:39 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_6935207075_19d5edca300100ru51.html
+2020-06-24 11:38:41 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_6563173051_1873212bb01900y6v1.html
+2020-06-24 11:38:41 [SinaSpider] INFO: ['特朗普宣布冻结四类赴美签证，硅谷巨头怒批“目光短浅”']
+2020-06-24 11:38:43 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_5461853682_m1458d45f200100vfyn.html
+2020-06-24 11:38:43 [SinaSpider] INFO: ['李莉：有分歧也会执行总统命令 美国防部始终在配合总统的决策']
+2020-06-24 11:38:43 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_5461853682_m1458d45f200100vfyn.html
+2020-06-24 11:38:46 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1496814565_593793e502000snko.html
+2020-06-24 11:38:46 [SinaSpider] INFO: ['国际观察丨竞选集会冷场后大发雷霆，特朗普大选连任将迎最高风险']
+2020-06-24 11:38:46 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_1496814565_593793e502000snko.html
+2020-06-24 11:38:49 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_1611998284_6015244c02000s3du.html
+2020-06-24 11:38:49 [SinaSpider] INFO: ['特朗普想2020连任，还是破罐破摔？议员：美国危机让他焦头烂额']
+2020-06-24 11:38:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 262697,
+ 'downloader/request_count': 513,
+ 'downloader/request_method_count/GET': 513,
+ 'downloader/response_bytes': 11299055,
+ 'downloader/response_count': 513,
+ 'downloader/response_status_count/200': 504,
+ 'downloader/response_status_count/302': 9,
+ 'dupefilter/filtered': 488,
+ 'elapsed_time_seconds': 853.156502,
+ 'finish_reason': 'closespider_itemcount',
+ 'finish_time': datetime.datetime(2020, 6, 24, 3, 38, 49, 693189),
+ 'item_scraped_count': 265,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 1132,
+ 'request_depth_max': 6,
+ 'response_received_count': 504,
+ 'scheduler/dequeued': 513,
+ 'scheduler/dequeued/memory': 513,
+ 'scheduler/enqueued': 959,
+ 'scheduler/enqueued/memory': 959,
+ 'start_time': datetime.datetime(2020, 6, 24, 3, 24, 36, 536687)}
+2020-06-24 11:38:49 [scrapy.core.engine] INFO: Spider closed (closespider_itemcount)

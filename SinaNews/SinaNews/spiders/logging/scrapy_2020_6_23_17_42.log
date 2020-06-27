@@ -1,0 +1,77 @@
+2020-06-23 17:42:24 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: SinaNews)
+2020-06-23 17:42:24 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.7 (default, Mar 23 2020, 23:19:08) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.18362-SP0
+2020-06-23 17:42:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'SinaNews',
+ 'CLOSESPIDER_ITEMCOUNT': 1500,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_DELAY': 5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logging/scrapy_2020_6_23_17_42.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'SinaNews.spiders',
+ 'RETRY_TIMES': 5,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue',
+ 'SPIDER_MODULES': ['SinaNews.spiders']}
+2020-06-23 17:42:25 [scrapy.extensions.telnet] INFO: Telnet Password: 483429a36214d8d3
+2020-06-23 17:42:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.closespider.CloseSpider',
+ 'scrapy.extensions.logstats.LogStats']
+2020-06-23 17:42:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-06-23 17:42:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-23 17:42:26 [scrapy.middleware] INFO: Enabled item pipelines:
+['SinaNews.pipelines.SinaNewsPipeline']
+2020-06-23 17:42:26 [scrapy.core.engine] INFO: Spider opened
+2020-06-23 17:42:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-23 17:42:26 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-06-23 17:42:27 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/o/2020-06-23/doc-iircuyvk0057644.shtml
+2020-06-23 17:42:27 [SinaSpider] INFO: ['综述：美国移除引发种族歧视争议纪念物风潮再起']
+2020-06-23 17:42:28 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/o/2020-06-23/doc-iircuyvk0057644.shtml
+2020-06-23 17:42:28 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-23/doc-iircuyvk0052236.shtml
+2020-06-23 17:42:28 [SinaSpider] INFO: ['谷歌1600多名员工请愿，要求公司停止向美国警方出售服务']
+2020-06-23 17:42:28 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-23/doc-iircuyvk0052236.shtml
+2020-06-23 17:42:28 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_2810373291_a782e4ab02001qiou.html?from=news&subch=onews
+2020-06-23 17:42:28 [SinaSpider] INFO: ['综述：美国移除引发种族歧视争议纪念物风潮再起']
+2020-06-23 17:42:28 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_2810373291_a782e4ab02001qiou.html?from=news&subch=onews
+2020-06-23 17:42:32 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_213815211_0cbe8fab02000y6jp.html?from=news&subch=onews
+2020-06-23 17:42:32 [SinaSpider] INFO: ['（国际）综述：美国移除引发种族歧视争议纪念物风潮再起']
+2020-06-23 17:42:32 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_213815211_0cbe8fab02000y6jp.html?from=news&subch=onews
+2020-06-23 17:42:34 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/world/gjcj/2020-06-23/doc-iirczymk8580447.shtml
+2020-06-23 17:42:34 [SinaSpider] INFO: ['谷歌1600多名员工请愿 要求公司停止向美国警方出售服务']
+2020-06-23 17:42:34 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/world/gjcj/2020-06-23/doc-iirczymk8580447.shtml
+2020-06-23 17:42:34 [SinaSpider] INFO: 解析文章内容 + https://mil.news.sina.com.cn/2020-06-23/doc-iirczymk8576871.shtml
+2020-06-23 17:42:34 [SinaSpider] INFO: ['美籍华裔心理学家：美国处于重振与向衰转折点']
+2020-06-23 17:42:34 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://mil.news.sina.com.cn/2020-06-23/doc-iirczymk8576871.shtml
+2020-06-23 17:42:34 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/o/2020-06-23/doc-iirczymk8576698.shtml
+2020-06-23 17:42:34 [SinaSpider] INFO: ['美国白宫外警察和示威者发生冲突和对峙']
+2020-06-23 17:42:34 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/o/2020-06-23/doc-iirczymk8576698.shtml
+2020-06-23 17:42:38 [SinaSpider] INFO: 解析文章内容 + https://k.sina.com.cn/article_3740356007_def14da702001rq7t.html?from=news&subch=onews
+2020-06-23 17:42:38 [SinaSpider] INFO: ['弗洛伊德事件尚未平息 美国又一非洲裔男子遭警方锁喉']
+2020-06-23 17:42:38 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://k.sina.com.cn/article_3740356007_def14da702001rq7t.html?from=news&subch=onews
+2020-06-23 17:42:41 [SinaSpider] INFO: 解析文章内容 + https://finance.sina.com.cn/world/gjcj/2020-06-23/doc-iirczymk8577243.shtml
+2020-06-23 17:42:41 [SinaSpider] INFO: ['美籍华裔心理学家：美国处于重振与向衰转折点']
+2020-06-23 17:42:41 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://finance.sina.com.cn/world/gjcj/2020-06-23/doc-iirczymk8577243.shtml
+2020-06-23 17:42:41 [SinaSpider] INFO: 解析文章内容 + https://tech.sina.com.cn/roll/2020-06-23/doc-iirczymk8579618.shtml
+2020-06-23 17:42:41 [SinaSpider] INFO: ['美籍华裔心理学家：美国处于重振与向衰转折点']
+2020-06-23 17:42:41 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://tech.sina.com.cn/roll/2020-06-23/doc-iirczymk8579618.shtml
+2020-06-23 17:42:41 [SinaSpider] INFO: 解析文章内容 + https://news.sina.com.cn/o/2020-06-23/doc-iircuyvk0048889.shtml
+2020-06-23 17:42:41 [SinaSpider] INFO: ['美籍华裔心理学家：美国处于重振与向衰转折点']
+2020-06-23 17:42:41 [SinaSpider] INFO: 没有匹配到正文或主题不相关，url：https://news.sina.com.cn/o/2020-06-23/doc-iircuyvk0048889.shtml
